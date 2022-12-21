@@ -1,0 +1,77 @@
+
+//logo image
+
+.svgimage{
+    width:100px;
+    height:auto;
+}
+
+// header image
+ 
+.st1{fill:none;}
+.st2{font-family:'Satoshi-Regular';}
+.st3{font-size:95.2283px;}
+.st4{fill:$general-bg;}
+
+
+// moving triangle
+
+.svg-shadow{
+    filter: drop-shadow(3px 3px 25px rgbs($general-bg,0.5));
+}
+
+.st00, .st0{fill:$my-blue;}
+
+.tria{
+    position: absolute;
+    width:10%;
+    left: 50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+}
+  .tri{
+    position: absolute;
+    left:-50%;
+    top:-50%;
+    animation: cowmove 6s infinite;   
+    padding:5px;
+}
+
+
+@keyframes cowmove {
+    0% {
+      transform: translateY(20%) rotate(0);
+    }
+    30% {
+      transform: translateY(80%) rotate(0);
+    }
+    50% {
+      transform: translateY(80%) rotate(180deg);
+    }
+    80% {
+      transform: translateY(20%) rotate(180deg);
+    }
+    100% {
+      transform: translateY(20%) rotate(360deg);
+    }
+  }
+
+
+  // rotating circle
+
+  .headersquare{
+    position:relative;
+}
+
+.headersquare::after{
+    content: url('/src/svgs/doug.svg');
+    position: absolute;
+    right:-50px;
+    top:-50px;
+    width:100px;
+    animation: rotate 9s linear infinite; 
+}
+
+@keyframes rotate{
+    to{ transform: rotate(360deg); }
+  }

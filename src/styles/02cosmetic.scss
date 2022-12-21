@@ -1,0 +1,118 @@
+ // FONTS
+
+ html, body{
+    font-size: 20px;
+    font-family: 'Satoshi-Medium', sans-serif !important;
+ }
+
+ .nav-link {
+    font-size: 15px;
+ }
+
+ h1, .nav-link, .svg-font, .mybtn-font{
+    font-family: 'CabinetGrotesk-Black', sans-serif !important;
+}
+
+p, h1,h2, .nav-link , .svg-font , .mybtn-font{
+    color: $general-bg!important;
+    fill: $general-bg;
+}
+
+.nav-link:hover, .nav-link:focus {
+    color: $general-bg!important;
+    text-decoration: underline;
+}
+
+h1{
+    font-size: 13.5vmin;
+    line-height: 0.9;
+    margin-bottom: 3rem;
+}
+
+.mybtn-font{
+    text-transform: uppercase;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+.offcanvas.show  .nav-link{
+    font-size: 2rem!important;
+}
+
+// backgrounds
+
+body{
+    background-color: $general-bg;
+}
+
+
+.gen-background{
+    background: $cards-bg;
+    border-radius: $my-border-radius;
+}
+
+
+.portfolioCards1{
+    border-radius: $my-border-radius $my-border-radius  $my-border-radius 0;
+}
+
+.portfolioCards2{
+    border-radius: $my-border-radius $my-border-radius  0 $my-border-radius ;
+}
+
+.portfolioCards3{
+    border-radius: $my-border-radius 0 $my-border-radius   $my-border-radius ;
+}
+.portfolioCards4{
+    border-radius: 0 $my-border-radius  $my-border-radius   $my-border-radius ;
+}
+
+.headersquare, .navbar-toggler, .off-canvas{
+    background: $mini-cards-bg;
+}
+
+.navbar-toggler:focus{
+    border: 0px solid $general-bg;
+    box-shadow: $my-shadow;
+}
+
+.offcanvas.show:not(.hiding){
+	background  : $cards-bg;
+    
+
+
+}
+
+
+// cosmetic utilities
+
+html{
+    scroll-behavior: smooth; 
+}
+
+.myz{
+    z-index:3!important;
+}
+
+.my-shadow{
+    box-shadow: 2.8px 2.8px 2.2px rgba($general-bg, 0.02),
+     6.7px 6.7px 5.3px rgba($general-bg, 0.028),
+     12.5px 12.5px 10px rgba($general-bg, 0.035),
+     22.3px 22.3px 17.9px rgba($general-bg, 0.042),
+     41.8px 41.8px 33.4px rgba($general-bg, 0.05),
+     100px 100px 80px rgba($general-bg, 0.07),
+     inset 0px 0px 10px rgba($general-bg, 0.06);
+ }
+ 
+ 
+ 
+ .my-shadow-bg{
+     box-shadow:     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+     100px 100px 80px rgba(0, 0, 0, 0.07),
+     inset 0px 0px 10px rgba(0, 0, 0, 0.06);
+  }
+
