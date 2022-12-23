@@ -1,0 +1,88 @@
+.bg2{
+  background:  $mini-cards-bg;
+}
+
+.bg3{
+    background:  $cards-bg;
+  }
+
+  .card-shadow{
+    box-shadow:
+    3.6px 0px 7.8px -14px rgba(0, 0, 0, 0.31),
+    4.5px 0px 10.3px -14px rgba(0, 0, 0, 0.469),
+    5.2px 0px 11.6px -14px rgba(0, 0, 0, 0.542),
+    6px 0px 12.8px -14px rgba(0, 0, 0, 0.576),
+    7.2px 0px 14.8px -14px rgba(0, 0, 0, 0.63),
+    12px 0px 19px -14px rgba(0, 0, 0, 1)
+  ;
+  }
+
+.arrDown, .arrUp{
+    width: 100px;
+    height:auto;
+    margin : 0 auto;
+}
+
+
+.port-img-url1{
+    background-image: url("/src/img/bravoisdead.com_.jpg");
+
+}
+
+.port-img-url2{
+    background-image: url("/src/img/madyard.co.uk_.jpg");
+}
+
+.port-img{
+    background-repeat: no-repeat;
+    background-position :  center  top;
+    background-size: 100%;
+    animation: myscrollout 6.0s ;
+    border: 5px solid $general-bg;
+}
+
+.port-img:hover{
+    background-position :  center  bottom;
+    animation: myscroll 6.0s ;
+}
+
+@keyframes myscroll {
+    from {background-position :  center  top;}
+    to {background-position :  center  bottom;}
+  }
+
+  @keyframes myscrollout {
+    from {background-position :  center  bottom;}
+    to {background-position :  center  top;}
+  }
+
+  .whitetext{
+    color: var(--myWhite);
+    text-align: center;
+  }
+
+.mym1{
+    margin-left: -2rem;
+}
+
+.mym2{
+    margin-left: 2rem;
+}
+
+.myarrows{
+    font-size: 3rem;
+    box-shadow: $my-shadow;
+    background:  $general-bg;
+}
+
+.glider-next.disabled, .glider-prev.disabled{
+color:$mydimred;
+}
+
+.glider-next, .glider-prev {
+color:$myred;
+}
+
+.hideforfirefox{
+  overflow:hidden!important;
+}

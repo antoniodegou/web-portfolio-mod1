@@ -10,13 +10,12 @@
       <link rel="apple-touch-icon" sizes="180x180" href="/src/img/favicons/apple-touch-icon.png">
       <link rel="icon" type="image/png" sizes="32x32" href="/src/img/favicons/favicon-32x32.png">
       <link rel="icon" type="image/png" sizes="16x16" href="/src/img/favicons/favicon-16x16.png">
-      <link rel="manifest" href="/src/img//site.webmanifest">
       <link rel="mask-icon" href="/src/img//safari-pinned-tab.svg" color="#5bbad5">
       <title>Antonio de Gou - portfolio</title>
    </head>
    <body>
       <div class="container mt-3">
-         <header class=" gen-background my-shadow-bg mb-3 ">
+         <header class=" gen-background my-shadow-bg mb-5 ">
             <div class="row semicircle">
                <nav class="navbar navbar-expand-md d-flex align-items-start pe-5">
                   <div class="container-md">
@@ -76,11 +75,12 @@
                </div>
             </div>
          </header>
-         <section id="about" class="gen-background mb-3 my-shadow-bg">
+         <section id="about" class="gen-background my-shadow-bg mb-5">
             <div class="container-md">
                <div class="row semicircle2">
                   <div class="col-lg-6 align-self-center p-5 myz pb-1  ">
                      <h2 class="sectionheading">about</h2>
+                     <h6>{ gou.self() }</h6>
                      <div>
                         <embed type="image/svg+xml" src="/src/svgs/self.svg" class="boxanim">
                      </div>
@@ -98,57 +98,125 @@
                </div>
             </div>
          </section>
-
-         <section id="skills" class="gen-background my-shadow-bg pb-5 mb-3">
-          <div class="container-md ">
-          <div class="row semicircle3">
-             <div class="col-lg-6 align-self-center myz p-5">
-              <h2 class="sectionheading">skills</h2>
-             </div>
-             <div class="col-lg-6 align-self-center myz p-5">
-              <p>These are technologies i have worked the most with.</p>
-             </div>
-             <div class="row myz p-5" >
-                <div class="headersquare portfolioCards2 col my-shadow-bg p-3 m-3">
-                   <h3>languages</h3>
-                   <ul >
-                      <li >HTML</li>
-                      <li>CSS</li>
-                      <li>Javascript</li>
-                      <li>Python</li>
-                      <li>Kotlin</li>
-                      <li>Java</li>
-                      <li>PHP</li>
-                      <li>mySQL</li>
-                   </ul>
-                </div>
-                <div class="headersquare portfolioCards3 col my-shadow-bg p-3 m-3">
-                   <h3>libraries</h3>
-                   <ul>
-                      <li>bootstrap</li>
-                      <li>JEST</li>
-                      <li>flask</li>
-                      <li>Django</li>
-                      <li>Wordpress</li>
-                      <li>Processing</li>
-                      <li>P5.js</li>
-                      <li>jQuery</li>
-                   </ul>
-                </div>
-                <div class="headersquare portfolioCards4 col my-shadow-bg p-3 m-3">
-                   <h3>other</h3>
-                   <ul>
-                      <li>git</li>
-                      <li>github</li>
-                      <li>vite.js</li>
-                      <li>command line</li>
-                   </ul>
-                </div>
-             </div>
-          </div>
-       </section>
-
-
+         <section id="skills" class="gen-background my-shadow-bg pb-5 mb-5">
+            <div class="container-md ">
+               <div class="row semicircle3">
+                  <div class="col-lg-6 align-self-center myz p-5">
+                     <h2 class="sectionheading">skills</h2>
+                     <h6>{ gou.skills++ }</h6>
+                  </div>
+                  <div class="col-lg-6 align-self-center myz p-5">
+                     <p>These are technologies i have worked the most with.</p>
+                  </div>
+                  <div class="row myz p-5" >
+                     <div class="headersquare portfolioCards2 col my-shadow-bg p-3 m-3">
+                        <h3>languages</h3>
+                        <ul >
+                           <li >HTML</li>
+                           <li>CSS</li>
+                           <li>Javascript</li>
+                           <li>Python</li>
+                           <li>Kotlin</li>
+                           <li>Java</li>
+                           <li>PHP</li>
+                           <li>mySQL</li>
+                        </ul>
+                     </div>
+                     <div class="headersquare portfolioCards3 col my-shadow-bg p-3 m-3">
+                        <h3>libraries</h3>
+                        <ul>
+                           <li>bootstrap</li>
+                           <li>JEST</li>
+                           <li>flask</li>
+                           <li>Django</li>
+                           <li>Wordpress</li>
+                           <li>Processing</li>
+                           <li>P5.js</li>
+                           <li>jQuery</li>
+                        </ul>
+                     </div>
+                     <div class="headersquare portfolioCards4 col my-shadow-bg p-3 m-3">
+                        <h3>other</h3>
+                        <ul>
+                           <li>git</li>
+                           <li>github</li>
+                           <li>vite.js</li>
+                           <li>command line</li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </section>
+      </div>
+      <!-- end container -->
+      <!-- portfolio section   -->
+      <div id="portfolio" class="container-fluid bg2  mb-5 ">
+         <img src="/src/img/arrDown.svg" alt="header image" class=" arrDown d-flex justify-content-center">
+         <h1 class="text-center mt-5 mb-5">Portfolio</h1>
+         <p class="text-center">A look at the projects i have been working on</p>
+         <h6 class="text-center">{ gou.work() }</h6>
+         <div class="">
+            <div class="glider-contain container-fluid mb-5  hideforfirefox">
+               <div class="glider row pb-5 hideforfirefox">
+                  <div></div>
+                  <div class=" gen-background portfolioCards  portfolioCards1  col-4 myz container m-4  pt-5 pb-5 me-5 card-shadow">
+                     <div class="row  h-100 ">
+                        <div class="col  d-flex align-content-around flex-wrap ">
+                           <div class="mb-5 mym1">
+                              <h4 class="p-3 portfolioCards1 bg3 my-shadow-bg mb-0"> bravoisdead.com </h4>
+                           </div>
+                           <div class="ratio ratio-4x3 mb-5">
+                              <div class=" port-img-url1 portfolioCards2 bg2 my-shadow-bg mym2 port-img"></div>
+                           </div>
+                           <div class="p-3 portfolioCards1 bg3  my-shadow-bg mb-0 w-100 mym1 d-flex justify-content-center myz3">
+                              <button type="button" class="mybtn mybtn-font my-shadow" data-bs-toggle="modal" data-bs-target="#bravoisdead">more info</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" portfolioCards portfolioCards2 col-4 myz container m-4 pt-5 pb-5 me-5 card-shadow">
+                     <div class="row  h-100 ">
+                        <div class="col  d-flex align-content-around flex-wrap ">
+                           <div class="  mb-5 mym1  ">
+                              <h4 class="p-3 portfolioCards1 bg3 my-shadow-bg mb-0"> madyard.co.uk  </h4>
+                           </div>
+                           <div class="ratio ratio-4x3 mb-5">
+                              <div class="port-img-url2 portfolioCards2 bg2 my-shadow-bg mym2 port-img"></div>
+                           </div>
+                           <div class="p-3 portfolioCards1 bg3  my-shadow-bg mb-0 w-100 mym1 d-flex justify-content-center myz3">
+                              <button type="button" class="mybtn mybtn-font my-shadow" data-bs-toggle="modal" data-bs-target="#madyard">more info</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div class=" portfolioCards portfolioCards2 col-md-8 col-4  myz container m-4 pt-5 pb-5 me-5 card-shadow">
+                     <div class="row  h-100 ">
+                        <div class="col  d-flex align-content-around flex-wrap ">
+                           <div class="  mb-5 mym1  ">
+                              <h4 class="p-3 portfolioCards1 bg3 my-shadow-bg mb-0 "> madyard.co.uk  </h4>
+                           </div>
+                           <div class="ratio ratio-4x3 mb-5">
+                              <div class="port-img-url2 portfolioCards2 bg2 my-shadow-bg mym2 port-img"></div>
+                           </div>
+                           <div class="p-3 portfolioCards1 bg3  my-shadow-bg mb-0 w-100 mym1 d-flex justify-content-center myz3">
+                              <button type="button" class="mybtn mybtn-font my-shadow" data-bs-toggle="modal" data-bs-target="#madyard">more info</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <div></div>
+               </div>
+               <button aria-label="Previous" class="glider-prev m-5">  
+               <i class="bi bi-caret-left-fill myarrows portfolioCards3"></i>  
+               </button>
+               <button aria-label="Next" class="glider-next m-5">
+               <i class="bi bi-caret-right-fill myarrows portfolioCards4"></i>
+               </button>
+               <!-- <div role="tablist" class="dots"></div> -->
+            </div>
+         </div>
+         <img src="/src/img/arrUp.svg" alt="header image" class=" arrUp d-flex justify-content-center">
       </div>
       <!-- Scrollable modal of about section -->
       <article class="modal fade  myz2" id="mymodal"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -162,6 +230,40 @@
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam animi tempora maiores. Voluptates mollitia commodi tempora, nobis reiciendis culpa ullam aut excepturi fugiat vero sunt doloremque facere distinctio maxime expedita?
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta similique quae inventore porro fugiat quidem commodi? Ad, explicabo sequi! Saepe delectus eius ipsa nemo possimus vero illum quia odit soluta.
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus veritatis doloremque a, placeat, nostrum inventore dignissimos perferendis pariatur rerum delectus atque iusto adipisci optio in cupiditate totam possimus, id ratione.
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </article>
+      <!-- Scrollable modal of porfolio bravoisdead section -->
+      <article class="modal fade  myz2" id="bravoisdead"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog headersquare  portfolioCards2">
+            <div class="modal-content headersquare  portfolioCards2">
+               <div class="modal-header">
+                  <h5 class="modal-title" >Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  dd              
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </article>
+      <!-- Scrollable modal of porfolio madyard.co.uk section -->
+      <article class="modal fade  myz2" id="madyard"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog headersquare  portfolioCards2">
+            <div class="modal-content headersquare  portfolioCards2">
+               <div class="modal-header">
+                  <h5 class="modal-title"  >Modal title</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                  fff
                </div>
                <div class="modal-footer">
                   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

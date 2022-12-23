@@ -53,6 +53,13 @@ body{
     border-radius: $my-border-radius;
 }
 
+.portfolioCards{
+    background: $general-bg;
+    box-shadow: $my-shadow;
+    z-index:3;
+}
+
+
 
 .portfolioCards1{
     border-radius: $my-border-radius $my-border-radius  $my-border-radius 0;
@@ -100,7 +107,7 @@ html{
     z-index:6!important;
 }
 .myz3{
-    z-index:0!important;
+    z-index:1!important;
 }
 
 .modal-backdrop.show{
