@@ -8,19 +8,29 @@
 
 // header image
  
-.st1{fill:none;}
-.st2{font-family:'Satoshi-Regular';}
-.st3{font-size:95.2283px;}
-.st4{fill:$general-bg;}
 
-
-// moving triangle
-
-.svg-shadow{
-    filter: drop-shadow(3px 3px 25px rgbs($general-bg,0.5));
+.svg-head-font{
+  font-family: 'CabinetGrotesk-Black', sans-serif !important;
+  fill: $general-bg;
 }
 
-.st00, .st0{fill:$my-blue;}
+.svg-head-font-size{
+  font-size:95.2283px;
+}
+
+.svg-head-cross-fill, .svg-tri-fill{
+  fill:$my-blue;
+}
+
+.svg-head-braces-fill,#go, #lo{
+  fill:$general-bg;
+}
+
+
+.svg-shadow{
+    filter: drop-shadow(3px 3px 25px rgba($general-bg,0.5));
+}
+
 
 .tria{
     position: absolute;
@@ -59,11 +69,13 @@
 
   // rotating circle
 
-  .headersquare{
+  .st0{fill:url(#aa_00000157301385466690272610000006346710871523586966_);}
+
+  .card-decor-1{
     position:relative;
 }
 
-.headersquare::after{
+.card-decor-1::after{
     content: url('/src/svgs/doug.svg');
     position: absolute;
     right:-50px;
@@ -75,3 +87,4 @@
 @keyframes rotate{
     to{ transform: rotate(360deg); }
   }
+
