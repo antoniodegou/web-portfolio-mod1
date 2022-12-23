@@ -28,6 +28,7 @@
     right: 0;
     border-radius:  calc($semicircle-width/2) 0  0 calc($semicircle-width/2);
     z-index: 1;
+    box-shadow: $my-shadow;
 }
 
 .semicircle3::after{
@@ -38,4 +39,5 @@
     left: 50%;
     border-radius:  0 0 calc($semicircle-width/2)  calc($semicircle-width/2);
     z-index: 1;
+    box-shadow: $my-shadow;
 }
