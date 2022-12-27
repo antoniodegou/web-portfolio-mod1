@@ -150,8 +150,10 @@
          </section>
       </div>
       <!-- end container -->
+
+
       <!-- portfolio section   -->
-      <div id="portfolio" class="container-fluid bg2  mb-5 ">
+      <div id="portfolio" class="container-fluid bg2  mb-5  ">
          <img src="/src/img/arrDown.svg" alt="header image" class=" arrDown d-flex justify-content-center">
          <h1 class="text-center mt-5 mb-5">Portfolio</h1>
          <p class="text-center">A look at the projects i have been working on</p>
@@ -218,6 +220,55 @@
          </div>
          <img src="/src/img/arrUp.svg" alt="header image" class=" arrUp d-flex justify-content-center">
       </div>
+      <!-- end portfolio section   -->
+      <!-- contact  section   -->
+      <div class="container mt-3">
+
+        <div  id="contact" class="gen-background my-shadow-bg pb-5 mb-5">
+          <div class="container  semicircle4 py-4">
+          <h1 class="text-center">contact me</h1>
+            <!-- Bootstrap 5 starter form -->
+            <div class="row ">
+              <div class="col-lg-3"></div>
+              <div class="col-lg-6 myz2">
+            <form id="contactForm"   action="https://formspree.io/f/xayzwker"
+            method="POST">
+          
+              <!-- Name input -->
+              <div class="mb-3  ">
+                <label class="form-label" for="name">Name</label>
+                <input class="form-control portfolioCards1" id="name" type="text" placeholder="Name" name="name" />
+              </div>
+          
+              <!-- Email address input -->
+              <div class="mb-3 ">
+                <label class="form-label" for="emailAddress">Email Address</label>
+                <input class="form-control portfolioCards2" id="emailAddress" type="email" placeholder="Email Address"  name="email"/>
+              </div>
+          
+              <!-- Message input -->
+              <div class="mb-3 ">
+                <label class="form-label" for="message">Message</label>
+                <textarea class="form-control portfolioCards3" id="message" type="text" placeholder="Message" style="height: 10rem;" name="message"></textarea>
+              </div>
+          
+              <!-- Form submit button -->
+              <div class="d-flex justify-content-center position-relative myz3">
+                <button id="my-form-button" class="mybtn mybtn-font my-shadow" type="submit">Submit</button>
+               
+              </div>
+
+              <div class="d-flex justify-content-center position-relative myz3 mt-5">
+                <p id="my-form-status" class="text-center"></p>
+              </div>
+          
+            </form>
+          </div>
+          <div class="col-lg-3"></div>
+          </div>
+          </div>
+  
+      </div>
       <!-- Scrollable modal of about section -->
       <article class="modal fade  myz2" id="mymodal"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
          <div class="modal-dialog headersquare  portfolioCards2">
@@ -266,7 +317,8 @@
                   fff
                </div>
                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                  <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                
                </div>
             </div>
          </div>

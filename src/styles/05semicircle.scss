@@ -1,8 +1,8 @@
-.semicircle, .semicircle2, .semicircle3{
+.semicircle, .semicircle2, .semicircle3, .semicircle4{
     position:relative;
 }
 
-.semicircle::after,.semicircle2::after,.semicircle3::after{
+.semicircle::after,.semicircle2::after,.semicircle3::after,.semicircle4::after{
     content: "";
     background: $circle-bg;
     position: absolute;
@@ -38,6 +38,17 @@
     top: 0;
     left: 50%;
     border-radius:  0 0 calc($semicircle-width/2)  calc($semicircle-width/2);
+    z-index: 1;
+    box-shadow: $my-shadow;
+}
+
+.semicircle4::after{
+    height: calc($semicircle2-width/2);
+    width: calc($semicircle2-width/4);
+    transform: translate(0%, -50%);
+    top: 50%;
+    left: 0;
+    border-radius:   0 calc($semicircle-width/2) calc($semicircle-width/2) 0 ;
     z-index: 1;
     box-shadow: $my-shadow;
 }
