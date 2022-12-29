@@ -15,17 +15,17 @@
    </head>
    <body>
       <div class="container mt-3">
-         <header class=" gen-background my-shadow-bg mb-5 ">
+         <header id="header" class="gen-background my-shadow-bg mb-5">
             <div class="row semicircle">
-               <nav class="navbar navbar-expand-md d-flex align-items-start pe-5">
+               <nav class=" navbar navbar-expand-md d-flex align-items-start pe-5">
                   <div class="container-md">
                      <div class="navbar-brand" >
-                        <embed type="image/svg+xml" class="svgimage ps-5" src="/src/svgs/logo.svg"   >
+                        <embed type="image/svg+xml" class="svgimage ps-3" src="/src/svgs/logo.svg"   >
                      </div>
                      <button class="navbar-toggler portfolioCards4" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-label="Mobile Navigation Button">
                      <span class="navbar-toggler-icon"></span>
                      </button>
-                     <div class=" collapse navbar-collapse offcanvas  offcanvas-start   h-100 " data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" >
+                     <div class="collapse navbar-collapse offcanvas offcanvas-start h-100" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" >
                         <div class="offcanvas-body justify-content-end align-middle w-100">
                            <ul class="navbar-nav justify-content-center align-middle h-100">
                               <li class="nav-item mb-2">
@@ -52,15 +52,17 @@
                   </div>
                </nav>
                <div class="myheader">
-                  <div class="container ">
-                     <div class="row ">
-                        <div class="col-lg-6 align-self-center p-5 myz">
-                           <h1 class="headertitle">Antonio<br>de gou</h1>
-                           <h2 class="pb-3" >full stack web developer</h2>
+                  <div class="container">
+                     <div class="row">
+                        <div class="col-lg-6 align-self-center p-4 myz">
+                           <p>Hi, i'm</p>
+                           <h1 class="pb-0 mb-1" >Antonio de gou</h1>
+                           <h2 class="pb-3 text-uppercase" >full stack web developer</h2>
                            <p>Hello, i can build things for you</p>
-                           <button type="button" class="mybtn mybtn-font my-shadow">lets work!</button>
+                           <a href="#contact" class="mybtn mybtn-font my-shadow me-3">let's talk</a>
+                           <a href="https://drive.google.com/file/d/13zu7uoOZuY3pvG7RGKnN8xNibj_UyDSf/view?usp=share_link" class="mybtn mybtn-font my-shadow"> download CV</a>
                         </div>
-                        <div class="col-lg-6 align-self-center p-5   d-flex justify-content-center  myz">
+                        <div class="col-lg-6 align-self-center p-5  d-flex justify-content-center  myz">
                            <div class="headersquare portfolioCards1 card-decor-1 my-shadow-bg ratio ratio-1x1 m-4">
                               <div>
                                  <embed type="image/svg+xml" src="/src/svgs/header-image.svg" alt="graphic animation header decor" >
@@ -75,89 +77,93 @@
                </div>
             </div>
          </header>
+         <!-- end header -->
+         <!-- start about -->
          <section id="about" class="gen-background my-shadow-bg mb-5">
             <div class="container-md">
-               <div class="row semicircle2">
-                  <div class="col-lg-6 align-self-center p-5 myz pb-1  ">
-                     <h2 class="sectionheading">about</h2>
-                     <h6>{ gou.self() }</h6>
-                     <div>
-                        <embed type="image/svg+xml" src="/src/svgs/self.svg" class="boxanim">
-                     </div>
+               <div class="row semicircle2  p-4">
+                  <div class="col-lg-6 myz row justify-content-between  p-0 m-0">
+                     <embed type="image/svg+xml" src="/src/svgs/self.svg" >
                   </div>
-                  <div class="col-lg-6 align-self-center p-5 myz  ">
-                     <div class="headersquare  portfolioCards2 my-shadow-bg abouttext p-5 mb-5">
-                        <p>My name is Antonio, i have a degree in Audiovisual and multimedia, i worked in video and graphics design for a few years. I learned to code through my love of generative art. In the last few year i understood how much i liked to code so i enrolled in code institute so i can be industry ready
-                        </p>
+                  <div class="col-lg-6 myz row justify-content-between  p-0 m-0">
+                     <div class="p-0">
+                        <h2 class="sectionheading ps-0">about</h2>
                      </div>
-                     <h3 >"...art taught me how to program..." </h3>
-                     <div class="  portfolioCards3  abouttext p-5 align-self-center  d-flex justify-content-center">
+                     <div class="p-0">
+                        <div class="headersquare portfolioCards2 my-shadow abouttext  mb-5 p-4">
+                           <p class="m-0 align-middle d-flex justify-content-center">My name is Antonio, i have a degree in Audiovisual and multimedia, i worked in video and graphics design for a few years. I learned to code through my love of generative art. In the last few year i understood how much i liked to code so i enrolled in code institute so i can be industry ready
+                           </p>
+                        </div>
+                     </div>
+                     <div class="  portfolioCards3  abouttext  align-self-center  d-flex justify-content-center pb-5">
                         <button type="button" class="mybtn mybtn-font my-shadow" data-bs-toggle="modal" data-bs-target="#mymodal">more about</button>
+                     </div>
+                     <div>
+                        <h3 >"...art taught me how to program..." </h3>
                      </div>
                   </div>
                </div>
             </div>
          </section>
+         <!-- end about -->
+         <!-- end skills -->
          <section id="skills" class="gen-background my-shadow-bg pb-5 mb-5">
-            <div class="container-md ">
-               <div class="row semicircle3">
-                  <div class="col-lg-6 align-self-center myz p-5">
-                     <h2 class="sectionheading">skills</h2>
-                     <h6>{ gou.skills++ }</h6>
-                  </div>
-                  <div class="col-lg-6 align-self-center myz p-5">
+            <div class="container-md  ">
+               <div class="row semicircle3 p-4">
+                  <div class="col-lg-6 align-self-center myz p-0">
+                     <h2 class="sectionheading mb-1">skills</h2>
                      <p>These are technologies i have worked the most with.</p>
                   </div>
-                  <div class="row myz p-5" >
-                     <div class="headersquare portfolioCards2 col my-shadow-bg p-3 m-3">
-                        <h3>languages</h3>
-                        <ul >
-                           <li >HTML</li>
-                           <li>CSS</li>
-                           <li>Javascript</li>
-                           <li>Python</li>
-                           <li>Kotlin</li>
-                           <li>Java</li>
-                           <li>PHP</li>
-                           <li>mySQL</li>
-                        </ul>
-                     </div>
-                     <div class="headersquare portfolioCards3 col my-shadow-bg p-3 m-3">
-                        <h3>libraries</h3>
-                        <ul>
-                           <li>bootstrap</li>
-                           <li>JEST</li>
-                           <li>flask</li>
-                           <li>Django</li>
-                           <li>Wordpress</li>
-                           <li>Processing</li>
-                           <li>P5.js</li>
-                           <li>jQuery</li>
-                        </ul>
-                     </div>
-                     <div class="headersquare portfolioCards4 col my-shadow-bg p-3 m-3">
-                        <h3>other</h3>
-                        <ul>
-                           <li>git</li>
-                           <li>github</li>
-                           <li>vite.js</li>
-                           <li>command line</li>
-                        </ul>
-                     </div>
+               </div>
+               <div class="row position-relative myz p-4" >
+                  <div id="languages" class="headersquare portfolioCards2 col my-shadow-bg p-4   me-4">
+                     <h3>languages</h3>
+                     <ul >
+                        <li >HTML</li>
+                        <li>CSS</li>
+                        <li>Javascript</li>
+                        <li>Python</li>
+                        <li>PHP</li>
+                        <li>mySQL</li>
+                     </ul>
+                  </div>
+                  <div id="libraries" class="headersquare portfolioCards3 col my-shadow-bg p-4   me-4">
+                     <h3>libraries</h3>
+                     <ul>
+                        <li>bootstrap</li>
+                        <li>SASS</li>
+                        <li>JEST</li>
+                        <li>flask</li>
+                        <li>Django</li>
+                        <li>Wordpress</li>
+                        <li>jQuery</li>
+                     </ul>
+                  </div>
+                  <div id="other" class="headersquare portfolioCards4 col my-shadow-bg p-4  ">
+                     <h3>other</h3>
+                     <ul>
+                        <li>git</li>
+                        <li>github</li>
+                        <li>vite.js</li>
+                        <li>command line</li>
+                     </ul>
+                  </div>
+               </div>
+               <div class="row p-4 pb-0">
+                  <div class="col p-0 pt-3 ">
+                     <p>Tools i use for generative art:</p>
+                     <p>Processing (java), kotlin (openRNDR), p5.js (javascript).</p>
                   </div>
                </div>
             </div>
          </section>
       </div>
       <!-- end container -->
-
-
-      <!-- portfolio section   -->
+      <!-- start portfolio section   -->
       <div id="portfolio" class="container-fluid bg2  mb-5  ">
          <img src="/src/img/arrDown.svg" alt="header image" class=" arrDown d-flex justify-content-center">
          <h1 class="text-center mt-5 mb-5">Portfolio</h1>
          <p class="text-center">A look at the projects i have been working on</p>
-         <h6 class="text-center">{ gou.work() }</h6>
          <div class="">
             <div class="glider-contain container-fluid mb-5  hideforfirefox">
                <div class="glider row pb-5 hideforfirefox">
@@ -201,7 +207,7 @@
                            <div class="ratio ratio-4x3 mb-5">
                               <div class="port-img-url2 portfolioCards2 bg2 my-shadow-bg mym2 port-img"></div>
                            </div>
-                           <div class="p-3 portfolioCards1 bg3  my-shadow-bg mb-0 w-100 mym1 d-flex justify-content-center myz3">
+                           <div class="p-3 portfolioCards1 bg3  my-shadow-bg mb-0 w-100 mym1 d-flex justify-content-center myz3 ">
                               <button type="button" class="mybtn mybtn-font my-shadow" data-bs-toggle="modal" data-bs-target="#madyard">more info</button>
                            </div>
                         </div>
@@ -223,51 +229,90 @@
       <!-- end portfolio section   -->
       <!-- contact  section   -->
       <div class="container mt-3">
-
-        <div  id="contact" class="gen-background my-shadow-bg pb-5 mb-5">
-          <div class="container  semicircle4 py-4">
-          <h1 class="text-center">contact me</h1>
-            <!-- Bootstrap 5 starter form -->
-            <div class="row ">
-              <div class="col-lg-3"></div>
-              <div class="col-lg-6 myz2">
-            <form id="contactForm"   action="https://formspree.io/f/xayzwker"
-            method="POST">
-          
-              <!-- Name input -->
-              <div class="mb-3  ">
-                <label class="form-label" for="name">Name</label>
-                <input class="form-control portfolioCards1" id="name" type="text" placeholder="Name" name="name" />
-              </div>
-          
-              <!-- Email address input -->
-              <div class="mb-3 ">
-                <label class="form-label" for="emailAddress">Email Address</label>
-                <input class="form-control portfolioCards2" id="emailAddress" type="email" placeholder="Email Address"  name="email"/>
-              </div>
-          
-              <!-- Message input -->
-              <div class="mb-3 ">
-                <label class="form-label" for="message">Message</label>
-                <textarea class="form-control portfolioCards3" id="message" type="text" placeholder="Message" style="height: 10rem;" name="message"></textarea>
-              </div>
-          
-              <!-- Form submit button -->
-              <div class="d-flex justify-content-center position-relative myz3">
-                <button id="my-form-button" class="mybtn mybtn-font my-shadow" type="submit">Submit</button>
-               
-              </div>
-
-              <div class="d-flex justify-content-center position-relative myz3 mt-5">
-                <p id="my-form-status" class="text-center"></p>
-              </div>
-          
-            </form>
-          </div>
-          <div class="col-lg-3"></div>
-          </div>
-          </div>
-  
+         <div  id="contact" class="gen-background my-shadow-bg pb-5 mb-5">
+            <div class="container  semicircle4 py-4">
+               <h1 class="text-center">contact me</h1>
+               <!-- Bootstrap 5 starter form -->
+               <div class="row ">
+                  <div class="col-lg-3"></div>
+                  <div class="col-lg-6 myz2">
+                     <form id="contactForm"   action="https://formspree.io/f/xayzwker"
+                        method="POST">
+                        <!-- Name input -->
+                        <div class="mb-3  ">
+                           <label class="form-label" for="name">Name</label>
+                           <input class="form-control portfolioCards1" id="name" type="text" placeholder="Name" name="name" >
+                        </div>
+                        <!-- Email address input -->
+                        <div class="mb-3 ">
+                           <label class="form-label" for="emailAddress">Email Address</label>
+                           <input class="form-control portfolioCards2" id="emailAddress" type="email" placeholder="Email Address"  name="email">
+                        </div>
+                        <!-- Message input -->
+                        <div class="mb-3 ">
+                           <label class="form-label" for="message">Message</label>
+                           <textarea class="form-control portfolioCards3" id="message"  placeholder="Message" style="height: 10rem;" name="message"></textarea>
+                        </div>
+                        <!-- Form submit button -->
+                        <div class="d-flex justify-content-center position-relative myz3 mt-4">
+                           <button id="my-form-button" class="mybtn mybtn-font my-shadow" type="submit">Submit</button>
+                        </div>
+                        <div class="d-flex justify-content-center position-relative myz3 mt-5">
+                           <p id="my-form-status" class="text-center"></p>
+                        </div>
+                     </form>
+                  </div>
+                  <div class="col-lg-3"></div>
+               </div>
+            </div>
+         </div>
+         <footer class="footer-bg my-shadow-bg mb-3 container ">
+            <div class="row">
+               <nav class="navbar navbar-expand   ">
+                  <div class="container-fluid">
+                     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav row justify-content-center  d-flex justify-content-center">
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link active" aria-current="page" href="#header">Home</a>
+                           </li>
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link" href="#about">About</a>
+                           </li>
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link" href="#skills">Skills</a>
+                           </li>
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link" href="#portfolio">Portfolio</a>
+                           </li>
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link" href="#contact">Contact</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <div class="row">
+               <ol class=" col d-flex justify-content-center m-0">
+                  <li class="  list-inline-item m-3">
+                     <a class="nav-link  " target="_blank" href="https://github.com/antonioDeGouv"><i class="bi bi-github"></i> github</a>
+                  </li>
+                  <li class=" list-inline-item m-3">
+                     <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/antoniodegou/"    ><i class="bi bi-linkedin"></i> linkedin</a>
+                  </li>
+               </ol>
+            </div>
+            <div class="row">
+               <ol class=" col d-flex justify-content-center">
+                  <li class="  list-inline-item m-3">
+                     <a class="nav-link  " target="_blank" href="https://drive.google.com/file/d/13zu7uoOZuY3pvG7RGKnN8xNibj_UyDSf/view?usp=share_link"><i class="bi bi-file-earmark-person"></i> see CV</a>
+                  </li>
+               </ol>
+            </div>
+            <div class="d-flex justify-content-center ">
+               <p>© <span id="currentYear"></span>: antonio de gou</p>
+            </div>
+         </footer>
       </div>
       <!-- Scrollable modal of about section -->
       <article class="modal fade  myz2" id="mymodal"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -318,7 +363,6 @@
                </div>
                <div class="modal-footer">
                   <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                
                </div>
             </div>
          </div>

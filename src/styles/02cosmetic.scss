@@ -17,7 +17,7 @@
     text-align: center!important;
 }
 
-p, h1,h2, .nav-link  , .mybtn-font{
+p, h1,h2, h3, .nav-link  , .mybtn-font, .mybtn-font a,li{
     color: $general-bg!important;
 }
 
@@ -27,12 +27,16 @@ p, h1,h2, .nav-link  , .mybtn-font{
 }
 
 h1, .sectionheading{
-    font-size: 13.5vmin;
+    font-size: 9.5vmin;
     line-height: 0.9;
-    margin-bottom: 3rem;
+    margin-bottom: 2.5rem;
 }
 
-.mybtn-font{
+h2{
+    font-size: 3.5vmin;
+}
+
+.mybtn-font,.mybtn-font a {
     text-transform: uppercase;
     text-decoration: none;
 }
@@ -41,6 +45,10 @@ h1, .sectionheading{
     font-size: 2rem!important;
 }
 
+
+footer li a,footer .nav-link:hover,footer .nav-link:focus  {
+   color: $my-blue!important;
+}
 // backgrounds
 
 body{
@@ -57,6 +65,15 @@ body{
     background: $general-bg;
     box-shadow: $my-shadow;
     z-index:3;
+}
+
+.footer-bg{
+    border: 1px solid $my-blue;
+    border-radius: $my-border-radius;
+}
+
+.footer-bg p, .footer-bg a{
+    color: $my-blue!important;
 }
 
 

@@ -68,3 +68,9 @@ new Glider(document.querySelector('.glider'), {
     });
   }
   form.addEventListener("submit", handleSubmit)
+
+
+
+  //get footer current year
+
+document.getElementById("currentYear").innerHTML = new Date().getFullYear();

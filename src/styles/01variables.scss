@@ -1,13 +1,12 @@
-//VARIABLES 
-
 $general-bg: #2D142C;
 $my-blue: #50B4AD;
+$my-white: #ECE2CF;
 $cards-bg: linear-gradient(45deg, #50B4AD 0%, #ECE2CF 100%);
 $circle-bg: linear-gradient(150deg, #E3938E 0%, #EE4540 100%);
 $mini-cards-bg: linear-gradient(90deg, #ECE2CF 0%, #ffffff 100%);
 $semicircle-width: 55vw;
 $semicircle2-width: 120vmin;
-$my-border-radius: 25px;
+$my-border-radius: 15px;
 $my-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
 12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
@@ -32,15 +31,6 @@ $mydimred: #E3938E;
   }
   
 
-@font-face {
-    font-family: 'Satoshi-Black';
-    src: url('/src/fonts/Satoshi-Black.woff2') format('woff2'),
-         url('/src/fonts/Satoshi-Black.woff') format('woff'),
-         url('/src/fonts/Satoshi-Black.ttf') format('truetype');
-         font-weight: 900;
-         font-display: swap;
-         font-style: normal;
-  }
 
   @font-face {
     font-family: 'Satoshi-Medium';
