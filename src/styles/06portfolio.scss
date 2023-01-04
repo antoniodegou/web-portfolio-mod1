@@ -1,11 +1,21 @@
+.portfolioCards{
+  background: $mini-cards-bg;
+  box-shadow: $my-shadow;
+  z-index:3;
+}
+
 .bg2{
-  background:  $mini-cards-bg;
+  background:  $circle-bg;
 }
 
 .bg3{
-    background:  $cards-bg;
+    background:  $bg-bg;
+    color: $my-dim-white!important;
   }
 
+  .glider-track{
+    padding:0;
+  }
   .card-shadow{
     box-shadow:
     3.6px 0px 7.8px -14px rgba(0, 0, 0, 0.31),
@@ -18,7 +28,7 @@
   }
 
 .arrDown, .arrUp{
-    width: 100px;
+    width: 50px;
     height:auto;
     margin : 0 auto;
 }
@@ -38,7 +48,6 @@
     background-position :  center  top;
     background-size: 100%;
     animation: myscrollout 6.0s ;
-    border: 5px solid $general-bg;
 }
 
 .port-img:hover{
@@ -61,13 +70,7 @@
     text-align: center;
   }
 
-.mym1{
-    margin-left: -2rem;
-}
 
-.mym2{
-    margin-left: 2rem;
-}
 
 .myarrows{
     font-size: 3rem;
@@ -76,7 +79,7 @@
 }
 
 .glider-next.disabled, .glider-prev.disabled{
-color:$mydimred;
+  color:$mydimred;
 }
 
 .glider-next, .glider-prev {

@@ -15,19 +15,21 @@ new Glider(document.querySelector('.glider'), {
     },
     responsive: [
         {
-          // screens greater than >= 775px
+          // screens greater than >= 768px
           breakpoint: 768,
           settings: {
-            // Set to `auto` and provide item width to adjust to viewport
-            slidesToScroll: 2,
             slidesToShow: 2.5,
- 
           }
         },{
-          // screens greater than >= 1024px
+          // screens greater than >= 992px
+          breakpoint: 992,
+          settings: {
+            slidesToShow: 3.0,
+          }
+        },{
+          // screens greater than >= 1200px
           breakpoint: 1200,
           settings: {
-            slidesToScroll: 2,
             slidesToShow: 3.5,
           }
         }

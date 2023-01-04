@@ -1,11 +1,19 @@
-$general-bg: #2D142C;
-$my-blue: #50B4AD;
+$bg-bg: #28342E;
+$general-bg: #28342E;
+$my-blue: #465A51;
+$my-dim-blue: #7DA497;
 $my-white: #ECE2CF;
-$cards-bg: linear-gradient(45deg, #50B4AD 0%, #ECE2CF 100%);
-$circle-bg: linear-gradient(150deg, #E3938E 0%, #EE4540 100%);
-$mini-cards-bg: linear-gradient(90deg, #ECE2CF 0%, #ffffff 100%);
-$semicircle-width: 55vw;
+$my-dim-white: #ffffff;
+$myred: #d8b842;
+$mydimred: #9ca546;
+
+$cards-bg: linear-gradient(45deg, $my-blue 0%, $my-dim-blue 100%);
+$circle-bg: linear-gradient(150deg, $mydimred 0%, $myred 100%);
+$mini-cards-bg: linear-gradient(90deg, $my-white 0%, $my-dim-white 100%);
+
+$semicircle-width: 80vmin;
 $semicircle2-width: 120vmin;
+
 $my-border-radius: 15px;
 $my-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
 6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
@@ -14,32 +22,93 @@ $my-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
 41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
 100px 100px 80px rgba(0, 0, 0, 0.07),
 inset 0px 0px 10px rgba(0, 0, 0, 0.06);
-$myred: #EE4540;
-$mydimred: #E3938E;
+
+
+@font-face {
+     font-family: 'CabinetGrotesk-Black';
+     src: url('../fonts/CabinetGrotesk-Black.woff2') format('woff2'),
+          url('../fonts/CabinetGrotesk-Black.woff') format('woff'),
+          url('../fonts/CabinetGrotesk-Black.ttf') format('truetype');
+          font-weight: 900;
+          font-display: swap;
+          font-style: normal;
+   }
+   
+ 
+ 
+   @font-face {
+     font-family: 'Satoshi-Medium';
+     src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
+          url('../fonts/Satoshi-Medium.woff') format('woff'),
+          url('../fonts/Satoshi-Medium.ttf') format('truetype');
+          font-weight: 500;
+          font-display: swap;
+          font-style: normal;
+   }
+
+$heading-font: 'CabinetGrotesk-Black', sans-serif !important;
+$text-font: 'Satoshi-Medium', sans-serif !important;
+$root-font-size: 16px;
+$smaller-font: 0.8rem;
+$tittle-font-size: 8.5vmin;
+$subtittle-font-size: 2vmin;
+$offcanvas-font-size: 2rem!important;
+
+// $bg-bg: #28342E;
+// $bg1: #070E29;
+// $bg2: #5F2909;
+
+// $general-bg: #2D142C;
+// $my-blue: #50B4AD;
+// $my-dim-blue: #ECE2CF;
+// $my-white: #ECE2CF;
+// $my-dim-white: #ffffff;
+// $myred: #EE4540;
+// $mydimred: #E3938E;
+
+// $general-bg: #27363B;
+// $my-blue: #99B998;
+// $my-dim-blue: #FACEAA;
+// $my-white: #ECE2CF;
+// $my-dim-white: #ffffff;
+// $myred: #F4837D;
+// $mydimred: #EB4960;
+
+// $general-bg: #085171;
+// $my-blue: #2C728F;
+// $my-dim-blue: #97A2AC;
+// $my-white: #ECE2CF;
+// $my-dim-white: #ffffff;
+// $myred: #E88E85;
+// $mydimred: #D51F4B;
+
+
+// #085171
+// #2C728F
+// #97A2AC
+// #E88E85
+// #DF4D71
+// #D51F4B
+
+
+// #535878
+// #9DB0CD
+// #B8D8E3
+// #FEE1DD
+// #E8C2C5
+// #CEA0AA
+
+
+
+// #81B09B
+// #C8C9A8
+// #FACDAB
+// #F59C98
+// #F13F63
 
 
 
 
- @font-face {
-    font-family: 'CabinetGrotesk-Black';
-    src: url('../fonts/CabinetGrotesk-Black.woff2') format('woff2'),
-         url('../fonts/CabinetGrotesk-Black.woff') format('woff'),
-         url('../fonts/CabinetGrotesk-Black.ttf') format('truetype');
-         font-weight: 900;
-         font-display: swap;
-         font-style: normal;
-  }
-  
 
-
-  @font-face {
-    font-family: 'Satoshi-Medium';
-    src: url('../fonts/Satoshi-Medium.woff2') format('woff2'),
-         url('../fonts/Satoshi-Medium.woff') format('woff'),
-         url('../fonts/Satoshi-Medium.ttf') format('truetype');
-         font-weight: 500;
-         font-display: swap;
-         font-style: normal;
-  }
   
 

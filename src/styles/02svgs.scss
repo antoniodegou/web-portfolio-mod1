@@ -1,16 +1,10 @@
 
-//logo image
-
-.svgimage{
-    width:100px;
-    height:auto;
-}
 
 // header image
- 
+
 
 .svg-head-font{
-  font-family: 'CabinetGrotesk-Black', sans-serif !important;
+  font-family: $heading-font;
   fill: $general-bg;
 }
 
@@ -48,6 +42,8 @@
 }
 
 
+
+
 @keyframes cowmove {
     0% {
       transform: translateY(20%) rotate(0);
@@ -67,47 +63,75 @@
   }
 
 
+
+
+
+
+  // self svg and doughnut
+
+  .self-red{fill:$myred;}
+  .self-dark{fill:$general-bg;}
+  .self-link1{fill:url(#SVGID_1_);}
+  .self-light{fill:$my-white;}
+  .self-link2{fill:url(#SVGID_00000159431354812606204790000013109046028296011664_);}
+  
+.doug-01{
+  fill:url(#SVGID_1_1);
+}
+  
+  .selfgrad1 {
+    stop-color:$myred;
+  }
+  
+  .selfgrad2 {
+    stop-color:$mydimred;
+  }
+
+
   // rotating circle
 
-  .st0{fill:url(#aa_00000157301385466690272610000006346710871523586966_);}
+  .cir{
 
-  .card-decor-1{
-    position:relative;
-}
-
-.card-decor-1::after{
-    content: url('/src/svgs/doug.svg');
     position: absolute;
-    right:-50px;
-    top:-50px;
-    width:100px;
-    animation: rotate 9s linear infinite; 
-}
+    width:30%;
+    height:30%;
+    transform: translate(-50%, -50%);
+    left:0;
+    top:0%;
+  }
+  
+  .circle{
+    position: absolute;
+    padding:5px;
+    animation: rotate 3s linear infinite;
+  
+  }
+
+
 
 @keyframes rotate{
-    to{ transform: rotate(360deg); }
+    to{ 
+      transform: rotate(360deg); 
+    }
   }
 
-  #languages, #libraries, #other{
-    position: relative;
-  }
 
-#languages::after {
-  content: url('/src/svgs/doug.svg');
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left:100%;
-  top:100%;
-  width:50px;
 
+//logo image
+
+.svgimage{
+    width:100px;
+    height:auto;
 }
 
-#libraries::after {
-  content: url('/src/svgs/thex.svg');
-  position: absolute;
-  transform: translate(-50%, -50%);
-  left:100%;
-  top:100%;
-  width:50px;
+  
+// logo
 
+.logocolor, .arrows{
+   fill:$general-bg; 
 }
+
+// triangle arrows
+
+
+
