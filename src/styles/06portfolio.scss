@@ -27,11 +27,6 @@
   ;
   }
 
-.arrDown, .arrUp{
-    width: 50px;
-    height:auto;
-    margin : 0 auto;
-}
 
 
 .port-img-url1{
@@ -41,6 +36,9 @@
 
 .port-img-url2{
     background-image: url("/src/img/madyard.co.uk_.jpg");
+}
+.port-img-url3{
+  background-image: url("/src/img/antoniodegou.jpg");
 }
 
 .port-img{
@@ -70,14 +68,25 @@
     text-align: center;
   }
 
+.corner-previous{
+  border-radius: 0 $my-border-radius $my-border-radius 0     ;
 
+}
 
+.corner-next{
+  border-radius:  $my-border-radius   0  0 $my-border-radius     ;
+}
 .myarrows{
-    font-size: 3rem;
+    font-size: 3.5rem;
     box-shadow: $my-shadow;
     background:  $general-bg;
 }
-
+.glider-next{
+  right:-24px;
+}
+.glider-prev{
+  left:-24px;
+}
 .glider-next.disabled, .glider-prev.disabled{
   color:$mydimred;
 }

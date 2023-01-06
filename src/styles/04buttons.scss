@@ -11,6 +11,7 @@ $angle-o: 4px;
     padding: 10px 15px;
     border: 0px solid $my-blue;
     box-shadow: $my-shadow, -6px 6px 0 $general-bg;
+    max-height: 44px;
 
     &:hover {
       top: 3px;

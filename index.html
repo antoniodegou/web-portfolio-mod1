@@ -90,15 +90,14 @@
          <section id="about" class="gen-background my-shadow-bg mb-5">
             <div class="container-md">
                <div class="row semicircle2  p-4">
-                  <div class="col-lg-6 myz row justify-content-between  p-0 m-0">
+                  <div class="col-lg-6 myz row   p-0 m-0">
                      <embed type="image/svg+xml" src="/src/svgs/self.svg" >
                   </div>
-                  <div class="col-lg-6 myz row   p-0 m-0">
-                     <div class="p-0">
-                        <h2 class="sectionheading ps-0 mb-2">about</h2>
-                        <h2 class="pb-3 text-uppercase">My relationship with code</h2>
+                  <div class="col-lg-6 myz align-self-start p-0 m-0">
+                     <div class="p-0 mb-4">
+                        <h2 class="sectionheading ps-0 mb-0">about</h2>
                      </div>
-                     <div class="p-0 mb-5">
+                     <div class="p-0 mb-4">
                         <div class="headersquare corner-bt-right my-shadow-bg abouttext   p-4">
                            <p class="m-0 align-middle d-flex justify-content-center">
                             &ensp;I have always been interested in technology ever since I can remember. I have a degree in Audiovisual and Multimedia, which lead me to work in video and graphic design for a few years. 
@@ -107,12 +106,18 @@
                           </p>
                         </div>
                      </div>
-                     <div class="  corner-top-right  abouttext  align-self-center  d-flex justify-content-center  mb-5">
+                     <div class="   p-0 mb-4  d-flex justify-content-center  ">
+                      <div class="m-auto">
                         <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-toggle="modal" data-bs-target="#mymodal">more about</button>
+                      </div>
+
                      </div>
-                     <div class="mb-4 text-center headersquare corner-top-right  my-opacity my-shadow-bg">
-                        <h3 class="p-4" >"...art taught me how to program..." </h3>
+                     <div class="p-0 mb-4">
+                      <div class="mb-4 text-center headersquare corner-top-right  my-opacity my-shadow-bg abouttext   p-4  ">
+                        <h3 class="m-0 align-middle d-flex justify-content-center" >"...art taught me how to program..." </h3>
                      </div>
+                     </div>
+
                   </div>
                </div>
             </div>
@@ -132,7 +137,7 @@
                   <div class=" col-6 col-md-4 p-0 d-flex align-self-stretch  ">
                     <div id="languages" class="w-100 headersquare corner-bt-right my-shadow-bg  p-4 me-4   ">
                       <h3 class="pb-3 text-uppercase m-0 p-0 pb-3">languages</h3>
-                      <ul >
+                      <ul >                                 
                           <li>HTML</li>
                           <li>CSS</li>
                           <li>Javascript</li>
@@ -188,20 +193,36 @@
       
       <!-- start portfolio section   -->
       <div id="portfolio" class="container-fluid bg2  mb-5 ps-0 pe-0 ">
-        <embed type="image/svg+xml" class=" arrDown d-flex justify-content-center" src="/src/svgs/arrDown.svg" aria-label="circle animation detail decor">
 
-        <div>
+
+        <div class="pt-4 mb-5">
           <h2 class="sectionheading text-center mt-4 mb-1">Portfolio</h2>
           <p class="text-center">A look at the projects i have been working on</p>
         </div>
         <div class="container-fluid ps-0 pe-0">
-          <div class="glider-contain container-fluid mb-5 ps-0 pe-0 hideforfirefox">
+          <div class="glider-contain container-fluid   ps-0 pe-0 hideforfirefox">
 
             <div class="glider row pb-5 hideforfirefox">
 
                   <div></div>
 
-                  <div class="portfolioCards corner-bt-left col-4 myz container m-4 me-5 card-shadow">
+                  <div class="portfolioCards corner-bt-left col-4 myz container   me-5 card-shadow">
+                    <div class="row p-4">
+                       <div class="col p-0">
+                          <div class="mb-4">
+                             <h3 class="p-3 text-uppercase corner-bt-left bg3 my-shadow-bg mb-0">antoniodegou.co.uk</h3>
+                          </div>
+                          <div class="ratio ratio-4x3 mb-4 ">
+                             <div class="port-img-url3 corner-bt-right bg2 my-shadow-bg port-img"></div>
+                          </div>
+                          <div class="p-3 mb-0 w-100 d-flex justify-content-center  ">
+                             <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-toggle="modal" data-bs-target="#bravoisdead">more info</button>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                  <div class="portfolioCards corner-bt-left col-4 myz container   me-5 card-shadow">
                      <div class="row p-4">
                         <div class="col p-0">
                            <div class="mb-4">
@@ -217,7 +238,7 @@
                      </div>
                   </div>
 
-                  <div class="portfolioCards corner-bt-left col-4 myz container m-4 me-5 card-shadow">
+                  <div class="portfolioCards corner-bt-left col-4 myz container   me-5 card-shadow">
                     <div class="row p-4">
                        <div class="col p-0">
                           <div class="mb-4">
@@ -238,26 +259,27 @@
                
             <div>
               <button aria-label="Previous" class="glider-prev myz m-4">  
-                <i class="bi bi-caret-left-fill myarrows corner-top-right"></i>  
+                <i class="bi bi-caret-left-fill myarrows  corner-previous pt-5 pb-5   "></i>  
               </button>
               <button aria-label="Next" class="glider-next m-4">
-                <i class="bi bi-caret-right-fill myarrows corner-top-left"></i>
+                <i class="bi bi-caret-right-fill myarrows   corner-next pt-5 pb-5"></i>
               </button>
             </div>
           </div>
         </div>
 
-        <embed type="image/svg+xml" class=" arrUp d-flex justify-content-center" src="/src/svgs/arrUp.svg" aria-label="circle animation detail decor">
+
 
       </div> <!-- end portfolio section   -->
 
 
        
-      <!-- contact  section   -->
+      <!-- contact and footer section   -->
       <div class="container mt-3 ">
          <div  id="contact" class="gen-background my-shadow-bg  ">
             <div class="container  semicircle4 p-4">
                <h2 class="sectionheading text-center">contact me</h2>
+               <p class=" text-center">Happy to hear from you!</p>
 
                <div class="row d-flex justify-content-center">
                   <div class="col-lg-6 myz">
@@ -373,6 +395,35 @@
             </div>
          </div>
       </article>
+
+
+            <!-- Scrollable modal of porfolio antonio de gou section -->
+            <article class="modal fade   " id="antoniodegou"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog headersquare  corner-bt-right">
+                 <div class="modal-content headersquare  corner-bt-right">
+                    <div class="modal-header">
+                       <h5 class="modal-title" >Antonio de Gou</h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                     <h3>Techonologies used</h3>
+                     <p>HTML, SASS, javascript, vitejs, formspree, bootstrap 5</p>
+                     <h3>Live project</h3>
+                     <a class="nav-link" target="_blank" href="#home" aria-label="Go to Antonio's art page (opens in new tab)">Bravoisdead</a>
+                     <br>
+                     <h3>Description</h3>
+                     <p>Bravoidead is a website for my generative art that showcases my artwork made with programming. 
+                       Even though I used WordPress, I used the site builder Oxygen, which is very flexible as I can use HTML, CSS and PHP.
+                       I chose WordPress because it was easy to maintain and relatively quick to build. </p>
+                    </div>
+                    <div class="modal-footer myz">
+                       <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-dismiss="modal">Close</button>
+                    </div>
+                 </div>
+              </div>
+           </article>
+
+
       <!-- Scrollable modal of porfolio bravoisdead section -->
       <article class="modal fade   " id="bravoisdead"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
          <div class="modal-dialog headersquare  corner-bt-right">
