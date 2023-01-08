@@ -305,7 +305,7 @@ A link with the localhost will appear in the command line. Just click it and you
 npm add -D "dependency"
 ```
 
-##### Deploying
+##### Deploying 
 ```
 npm run build
 ```
