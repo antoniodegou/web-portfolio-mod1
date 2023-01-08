@@ -2,17 +2,15 @@
 
 A responsive website showcases Antonio de Gou's Full Stack Software portfolio.
 
-![The Quiz Arms shown on a variety of screen sizes] (/readme-images/responsive-mockup.jpg)
+![Antonio de gou is responsive](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/responsive-mockup.jpg)
 
- (../readme-images/responsive-mockup.jpg)
 
-(mockup of the website)
-
-(link to live website)
+Visit the deployed site: [Antonio de Gou webpage](https://antoniodegou.github.io/web-portfolio-mod1/)
 
 ![GitHub last commit](https://img.shields.io/github/last-commit/antoniodegou/web-portfolio-mod1?style=flat-square)
-
 ![GitHub language count](https://img.shields.io/github/languages/count/antoniodegou/web-portfolio-mod1?style=flat-square)
+
+
 
 ## CONTENTS
 
@@ -85,20 +83,23 @@ There are a few goals from the get-go, it has to look professional, pixel perfec
 ## Design
 
 ### General design choices
-
+![Antonio de gou is responsive](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/responsive-mockup.jpg)
 (two main design inspirations)
 
 The portfolio is a one-page design and separates all the information into sections.
 The aesthetics are based on business cards with round corners, shadows and organised information by columns. 
 The design is bold with a friendly side, the information is clear, and through Modals, more information and be unfolded.
 
-### colours and fonts
+### Colours 
 
-(colour pic)
+![Colours I used](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/colours.jpg)
+
 Sage and lemon combine to inspire stability and professionalism with friendliness and approachability. I worked out the colour scheme using Adobe Illustrator. 
 
 ### fonts
-I chose the fonts from https://www.fontshare.com/, which has a curation of web fonts that are very design oriented. 
+![Fonts I used](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/fonts.jpg)
+
+I chose the fonts from https://www.fontshare.com/ , which has a curation of web fonts that are very design oriented. 
 "Cabinet Grotesk" is a very detailed but sober font used for titles.
 "Satoshi" is minimal with round lines, ideal for longer texts.
 Both of these fonts have an interesting contrast between them.
@@ -107,6 +108,8 @@ Both of these fonts have an interesting contrast between them.
 
 ### Imagery
 
+![Assets i created](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/design-assets.jpg)
+
 I based the design on geometric shapes, so all images are visual vector assets I made in Adobe Illustrator. They were then exported in SVG format and integrated into the HTML document. There is also a picture of Antonio in the about section. 
 
 
@@ -114,7 +117,11 @@ I based the design on geometric shapes, so all images are visual vector assets I
 
 I made the Wireframes with the Balsamiq App and projected three sizes from desktop to mobile.
 
-(wireframes pics)
+<details><summary>See Desktop</summary> ![Desktop Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-desktop.jpeg) </details>
+
+<details><summary>See Tablet</summary> ![Tablet Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-tablet.jpeg) </details>
+
+<details><summary>See Mobile</summary> ![Mobile Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-mobile.jpeg) </details>
 
 ## Features
 
