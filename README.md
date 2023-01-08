@@ -83,28 +83,27 @@ There are a few goals from the get-go, it has to look professional, pixel perfec
 ## Design
 
 ### General design choices
-![Antonio de gou is responsive](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/responsive-mockup.jpg)
-(two main design inspirations)
 
 The portfolio is a one-page design and separates all the information into sections.
 The aesthetics are based on business cards with round corners, shadows and organised information by columns. 
-The design is bold with a friendly side, the information is clear, and through Modals, more information and be unfolded.
+The design is bold with a friendly side, the data is clear, and through Modals, more information and be unfolded.
 
 ### Colours 
 
 ![Colours I used](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/colours.jpg)
 
-Sage and lemon combine to inspire stability and professionalism with friendliness and approachability. I worked out the colour scheme using Adobe Illustrator. 
+Sage and lemon combine to inspire stability and professionalism with friendliness and approachability. I worked out the colour scheme using Adobe Illustrator. The Design heavily relies on gradients, so blending the colours makes the look smoother, and the contrasting colours go together way better.
 
-### fonts
+
+### Fonts
+
 ![Fonts I used](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/fonts.jpg)
 
-I chose the fonts from https://www.fontshare.com/ , which has a curation of web fonts that are very design oriented. 
+I chose the fonts from [Fontshare](https://fontshare.com/), which has a curation of web fonts that are very design oriented. 
 "Cabinet Grotesk" is a very detailed but sober font used for titles.
 "Satoshi" is minimal with round lines, ideal for longer texts.
 Both of these fonts have an interesting contrast between them.
 
-(picture of fonts)
 
 ### Imagery
 
@@ -130,9 +129,7 @@ I put all sections into one page with smooth scrolling: the header, about, skill
 
 All Pages on the website are responsive and have the following:
 
-* A favicon in the browser tab and title.
-* Horizontal menu that on mobile becomes off-canvas navigation.
-* SVG integration at times with animation.
+
 
 ### General
 
@@ -140,6 +137,9 @@ All Pages on the website are responsive and have the following:
 * A logo on the left of Antonio.
 * Smooth scrolling from that works in all browsers.
 * Several SVGs integrated into the HTML file at times with animation.
+
+![browser info](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/favicon.jpeg)
+
 
 ### Header (opening section)
 
@@ -149,12 +149,15 @@ The header comprises an SVG animation on the right and a card with the informati
 The animation is a simple metaphor for a system with rotating shapes and a 'gou.init()' text simulating the initiation of a program.
 The title card had the name as a title, the professional title and a small piece of information about Antonio's website.
 
+![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/01header.jpg)
 
 ### About
 
 The about section is about Antonio.
 It has a picture of Antonio on the left with a composition of shapes that matches the website aesthetics. 
 On the right is a title, a short description of Antonio and a button that opens a modal with more information about Antonio.
+
+![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/02about.jpg)
 
 
 ### Skills
@@ -163,36 +166,150 @@ A grid system organises the skills.
 There's a short introduction and lists of Languages, Libraries and other tools that Antonio has worked with.
 There is a shorter comment on languages and libraries that Antonio has used in his Generative art hobby.
 
+![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/03skills.jpg)
+
 ### Portfolio
 
 The most important part of the Website is the portfolio; for that reason, the design breaks from its normal flow and gets a different look.
 Each project has a card in a carousel style that works on mobile with a horizontal scroll.
 Each card has a button that opens a modal with more details about each project.
-You can drag the portfolio with arrows or dragging. It works with the mouse and touch.
+You can drag the portfolio with arrows or dragging, which works with the mouse and touch.
+
+![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/04portfolio.jpg)
 
 ### Form
 
 The primary way of contacting Antonio, even though it's a static website with the help of Formspree, is a working form. 
+
+![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/05contact.jpg)
 
 ### Footer
 
 The footer has a repetition of the smooth scrolling menu, social icons and another opportunity of downloading the CV.
 Also, an "all right reserved" text and symbol.
 
+![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/06footer.jpg)
+
 ### Future Implementations
+
+* Have more complex projects on the portfolio
+* Implement the website in React
+* Ditch form spree and have a more robust implementation of server-side form.
+* Ditch bootstrap to use Tailwind; it seems to be more of an industry standard.
+
 
 ### Accessibility
 
+https://img.shields.io/badge/JS-gliderjs-red
+
 ## Technologies Used
 
+Balsamiq - For the wireframes.
+Adobe Illustrator -  For the graphic design, design assets, and SVG export.
+Git - Version Control.
+GitHub - Host and save the website with version control.
+Fontshare - Fonts for the website.
+Visual Studio Code - Code editor.
+Google Dev Tools - To troubleshoot and test features and solve issues with responsiveness and styling.
+Favicon.io To create favicon.
+Shields.io To add badges to the README.
+Hoverify - responsiveness testing on several devices
+
+### Vite JS (Frontend Tooling)
+
+Vite js is a great starter project; you can add any dependencies and have live reloading as you save your HTML or CSS. In addition, it updates all browsers automatically.
+Some of their features go over my head, but one that gave me peace of mind was that it gets rid of any code that is not in use; for example, non of the bootstrap classes that are not in use do not get passed to the final CSS file. So that makes for smaller files. 
+There is also a separation of production files and final files.
+
+
 ### Languages Used
-### Frameworks, Libraries & Programs Used
+
+ HTML, CSS, JavaScript
+
+As expected, I used HTML for structure, CSS for style and JavaScript for interactivity and functionality. Important to mention that there is heavy use of SVG for all graphic assets.
+I used the HTML <embed> tag to embed the SVG. Even if I could use it inline SVG, I prefer to have them in separate files so the HTML wouldn't be too long and verbose. However, there are several ways to integrate SVG, but <embed> seems to be the best way to keep some animations and styles on the CSS files.
+
+### Libraries Used
+
+1. SASS
+
+I decided to use SASS because I like their implementation of variables; I also appreciate having the ability to have several files organised.
+
+2. Bootstrap v.5
+
+My primary motivation for Bootstrap use was their grid system, spacing, and responsiveness; once I got the hang of it, it made it much faster to have all spacing work on all devices.
+I also used their nav bar, off-canvas nav bar, and Modals to show more information as needed and keep a clean-looking website. 
+
+
+3. Formspree
+
+I wanted a working form, but still, I can host it on GitHub; I found this solution that, with a bit of javascript, sends an email to me if someone uses the form.
+
+4. Glider.js
+
+In the design process, I wanted the portfolio section to have a different style than the rest of the website. 
+I liked the idea of a carousel that scrolls horizontally, with arrows and dragging. Unfortunately, Bootstrap carousel didn't do exactly what I wanted, so I implemented the library glider that did precisely what I wanted. 
+
+
+
+
 
 ## Deployment & Local Development
 ### Deployment
+The site is deployed using GitHub Pages - Antonio de Gou.
+
+To Deploy the site using GitHub Pages:
+
+1. Login (or signup) to Github.
+2. Go to the repository for this project, antoniodegou/web-portfolio-mod1.
+3. Click the settings button.
+4. Select pages in the left hand navigation menu.
+5. From the source dropdown select main branch and press save.
+6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+
 ### Local Development
 #### How to Fork
+To fork the repository:
+
+1. Login (or sign up) to Github.
+2. Go to the repository for this project, antoniodegou/web-portfolio-mod1.
+3. Click the Fork button in the top right corner.
+
 #### How to Clone
+To clone the repository:
+
+1. Log in (or sign up) to GitHub.
+2. Go to the repository for this project, antoniodegou/web-portfolio-mod1.
+3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+
+#### When developing with ViteJS when cloned
+
+##### Installing all dependencies
+
+```
+cd "folder of the project"
+npm install
+```
+
+##### Getting started with live reloading
+```
+npm run dev
+```
+A link with the localhost will appear in the command line. Just click it and you will be directed.
+
+##### Install new dependencies
+
+```
+npm add -D "dependency"
+```
+
+##### Deploying
+```
+npm run build
+```
+
 
 ## Testing
 
