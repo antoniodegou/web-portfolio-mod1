@@ -70,11 +70,12 @@
 
 .corner-previous{
   border-radius: 0 $my-border-radius $my-border-radius 0     ;
-
+  border-radius: 0 50% 50% 0     ;
 }
 
 .corner-next{
   border-radius:  $my-border-radius   0  0 $my-border-radius     ;
+  border-radius:  100%   0  0  100%    ;
 }
 .myarrows{
     font-size: 3.5rem;

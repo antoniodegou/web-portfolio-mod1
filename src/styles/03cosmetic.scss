@@ -129,7 +129,7 @@ html{
 body::-webkit-scrollbar {
     width: 12px;               /* width of the entire scrollbar */
     scrollbar-width: thin;          /* "auto" or "thin" */
-    scrollbar-color: $my-white $my-white;   /* scroll thumb and track */ 
+    scrollbar-color: $my-white $my-white!important;   /* scroll thumb and track */ 
   }
   
   body::-webkit-scrollbar-track {
@@ -141,3 +141,7 @@ body::-webkit-scrollbar {
     border-radius: 20px 0 20px 0  ;       /* roundness of the scroll thumb */
   }
 
+  .scroller {
+    overflow-y: scroll;
+    scrollbar-color: #0A4C95 #C2D2E4!important;
+  }
