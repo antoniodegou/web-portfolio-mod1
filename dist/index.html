@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" >
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <meta name="description" content="Anotio de Gou's Web Developer portfolio">
+      <meta name="keywords" content="web developer, portfolio, full stack">
+      <meta name="author" content="Antonio de Gou">
+      <link rel="apple-touch-icon" sizes="180x180" href="data:image/png;base64,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">
+      <link rel="icon" type="image/png" sizes="32x32" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAABv1BMVEUAAADd39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/c3t7e4eDW1tfb3d3f4eHW19idlp53aXfU1dbe4ODc3d2zr7RlVGQvFi5RPlHU1Nbd4N/DwsV6bXo6IzkqESkqEClTQFPQ0NGQhpFGMUYrEiosEiotFCzV1tfEwsabk5zR0tPY2dqln6ZXRFYuFS0sEyu2src4IDdaSFqppKvZ29u4tLlqW2ozGzO3s7g1HTQqEChvYG+8ub3d4ODHxsmAdIA9Jjw1HjU/KT+FeYXKycynoahJNEgrESpMOEytp67AvcFyZHI3IDY5Ijh2aXfDwcXa3Nyuqa9fTl8wFy8xGTBjUmOyrbOakZpNOUw0HDNQPVCelp/JyMuEeIQ/KT62s7hKNkqIfYjMy867uLxuX27V1dbP0NHCwMPZ2tupo6paR1kuFi0oDyfR0dOUipRTP1LU1NXEwsWclJ3////GlVVQAAAAKnRSTlMAACSG1ff41oknAk3R/tRSTunrUyXQKYWN2/vckNPXLO5Y2FcDAfzdkSun8ovsAAAAAWJLR0SUf2dKFQAAAAd0SU1FB+YMFwkTI8iu23cAAAGJSURBVDjLfZNlWwJBFIXvmIgCKgZ2gjqLgLoWxoiyru3ait3d3d2tf1hkQ0B2z6d55rzPzL3nzgAgFBQcEor/KSxcFYEQAFJHRmlwQGm0OjUCFB2DZRWrRxAXjxWkTYBEjRKADaBV9HESBKif8long79nLrT47ICvbbUVFZfIARSmS8vKKyrtMgBVRVfX1JI6hx2bvcqAv9PrG5xMI0scTc0trVYJAdFua+/oZDjWDdi6unt6+0QE+Mtx/8AgcdseYMg17BoZxTQlABQeG5+Y5G0emOI4Mj0zS0tXzM0vMCzrDbAswywuScDyyqp4gAhwZG19QwLMm1vbOwLCA2R3b9/iKQKEJuwHhxwjAkfc8UmT0AZIMZyenRO+zYvLq2spCClJisY3ty7CEcfd/YPQol/U2Pr49Pzy6rDTdICoBeTt3fnxKT9u98DMX982BeA3dZryBQI8OW8lQ7gykAIq5WefChFpSn56BiBdrLyfmeX+m2q9bBnZObm/39uYYEgx/XdNefkFRgQ/oD7Cm77418gAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTItMjNUMDk6MTk6MzUrMDA6MDCoUmBWAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTEyLTIzVDA5OjE5OjM1KzAwOjAw2Q/Y6gAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+      <link rel="icon" type="image/png" sizes="16x16" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA6lBMVEXd39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/d39/c3t7f4eHY2drb3d3e4eHZ29upo6p3anjQ0NLe4OC9ur5wYnA0HDNIM0jEw8bFxMfLysyGe4dAKkAqESkqEClMOEuxrLJRPlGIfYjMy86moKdNOUwsEysrEiotFCwrESo6JDpOO060sLVhUGExGDA6IzljUmO2srfV1teelp9QPVApEChMN0uyrrOfmKDW19jMy82IfYk/KT9INEjIx8rS0tO8ub6LgYzR0tP////cfhh3AAAAE3RSTlMGYtn9/tpk7u9l2Nv83PBo3mcHiCd4cgAAAAFiS0dETYBoIGUAAAAHdElNRQfmDBcJEyK/qevhAAAAs0lEQVQY002P5xKCQAyEA1hAxXaHBT27ItjABvbeff/nkTsYJD8y2Z3s5AsAxwvIr0g0BsDFUahECRKBwLQlIeXNSqHopYDJUlmtVBW24xqYoFq90Wy1EXEdwIh0uj2trxuD4YggDAiPJ6Y1nenG3FqoNIKXtqOZrrFy1hsWUba7vXk4nuzzRaERevN6uz+eL3YGGAYh78+XMBAQPDCCsQ/GB9zMkSEmhp9LZwAk+a+zufwPFtsZsl2UdXUAAAAldEVYdGRhdGU6Y3JlYXRlADIwMjItMTItMjNUMDk6MTk6MzQrMDA6MDAOJWviAAAAJXRFWHRkYXRlOm1vZGlmeQAyMDIyLTEyLTIzVDA5OjE5OjM0KzAwOjAwf3jTXgAAAFd6VFh0UmF3IHByb2ZpbGUgdHlwZSBpcHRjAAB4nOPyDAhxVigoyk/LzEnlUgADIwsuYwsTIxNLkxQDEyBEgDTDZAMjs1Qgy9jUyMTMxBzEB8uASKBKLgDqFxF08kI1lQAAAABJRU5ErkJggg==">
+      <link rel="mask-icon" href="./assets/safari-pinned-tab-ecc172aa.svg" color="#5bbad5">
+      <title>Antonio de Gou - portfolio</title>
+      
+     <script type="module" crossorigin src="./assets/index-a41b6756.js"></script>
+     <link rel="stylesheet" href="./assets/index-0a4fb487.css">
+   </head>
+   <body>
+      <div class="container mt-3">
+         <header id="header" class="gen-background my-shadow-bg mb-5 ">
+            <div class="row semicircle">
+               <nav class=" navbar navbar-expand-md d-flex align-items-start pe-5">
+                  <div class="container-md">
+                     <div class="navbar-brand" >
+                           <img class="svgimage ps-3" src="./assets/logo-b07a908d.svg" onload="SVGInject(this)" />
+                        </div>
+                     <button class="navbar-toggler corner-top-left" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions" aria-label="Mobile Navigation Button">
+                     <span class="navbar-toggler-icon"></span>
+                     </button>
+                     <div class="collapse navbar-collapse offcanvas offcanvas-start h-100" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" >
+                        <div class="offcanvas-body justify-content-end align-middle w-100">
+                           <ul class="navbar-nav justify-content-center align-middle h-100">
+                              <li class="nav-item mb-2">
+                                 <a class="nav-link active" href="#about" aria-label="Scrolls to about section">About</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                 <a class="nav-link" href="#skills" aria-label="Scrolls to skills section">Skills</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                 <a class="nav-link  " href="#portfolio" aria-label="Scrolls to portfolio section">Portfolio</a>
+                              </li>
+                              <li class="nav-item mb-2" >
+                                 <a class="nav-link " href="#contact" aria-label="Scrolls to contact section">Contact</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                 <a class="nav-link" target="_blank" href="https://github.com/antonioDeGouv" aria-label="Go to Antonio's github page (opens in new tab)"><i class="bi bi-github"></i> github</a>
+                              </li>
+                              <li class="nav-item mb-2">
+                                 <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/antoniodegou/" aria-label="Go to Antonio's linkedin page (opens in new tab)"><i class="bi bi-linkedin"></i> linkedin </a>
+                              </li>
+                           </ul>
+                        </div>
+                     </div>
+                  </div>
+               </nav>
+               <div class="myheader">
+                  <div class="container">
+                     <div class="row p-4">
+                        <div class="col-lg-6 align-self-center  myz p-0">
+                          <div class=" headersquare corner-bt-left  my-shadow-bg p-4">
+                            <p>Hi, i'm</p>
+                            <h1 class="sectionheading pb-0 mb-1" >Antonio de gou</h1>
+                            <h2 class="pb-3 text-uppercase" >full stack web developer</h2>
+                            <p>You are on my portfolio website for programming, have a look at the thing that i have built and hopefully you can see that i love to program.</p>
+                          </div>
+                          <div class=" p-4 myz align-self-center  d-flex justify-content-center">
+                            <a href="#contact" class="mybtn mybtn-font my-shadow-bg me-3">let's talk</a>
+                            <a href="https://drive.google.com/file/d/13zu7uoOZuY3pvG7RGKnN8xNibj_UyDSf/view?usp=share_link" class="mybtn mybtn-font my-shadow-bg"> download CV</a>
+                          </div>
+                        </div>
+
+                        <div class="col-lg-6  pe-0  p-md-5 pe-lg-0  align-self-center d-flex justify-content-center myz">
+                           <div class="card-decor-1 ratio ratio-1x1 m-4 me-0">
+                              <div>
+                                    <img  src="./assets/header-image-91ecfdde.svg" onload="SVGInject(this)" />
+                              </div>
+                              <div class="tri">
+                                 <!-- <embed type="image/svg+xml" class="tria " src="/src/svgs/tri.svg" > -->
+                                    <img   src="./assets/tri-15df36de.svg" onload="SVGInject(this)" class="tria"  aria-label="triangle animation detail decor"/>
+                              </div>
+                              <div class="cir">
+                                 <img   src="./assets/doug-1bcda5c3.svg" onload="SVGInject(this)" class="circle"  aria-label="circle animation detail decor"/>
+                                <!-- <embed type="image/svg+xml" class="circle" src="/src/svgs/doug.svg" aria-label="circle animation detail decor"> -->
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </header> <!-- end header -->
+         
+         <!-- start about -->
+         <section id="about" class="gen-background my-shadow-bg mb-5">
+            <div class="container-md">
+               <div class="row semicircle2  p-4">
+                  <div class="col-lg-6 myz row   p-0 m-0">
+                     <embed type="image/svg+xml" src="/src/svgs/self.svg" >
+                  </div>
+                  <div class="col-lg-6 myz align-self-start p-0 m-0">
+                     <div class="p-0 mb-4">
+                        <h2 class="sectionheading ps-0 mb-0">about</h2>
+                     </div>
+                     <div class="p-0 mb-4">
+                        <div class="headersquare corner-bt-right my-shadow-bg abouttext   p-4">
+                           <p class="m-0 align-middle d-flex justify-content-center">
+                            &ensp;I have always been interested in technology ever since I can remember. I have a degree in Audiovisual and Multimedia, which lead me to work in video and graphic design for a few years. 
+                            <br>&ensp;For the last few years, I developed a love for generative art that taught me how to program, and I fell in love with coding.
+                            I recently joined Code Institute to learn the tools and industry standards and make a career change.
+                          </p>
+                        </div>
+                     </div>
+                     <div class="   p-0 mb-4  d-flex justify-content-center  ">
+                      <div class="m-auto">
+                        <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-toggle="modal" data-bs-target="#mymodal">more about</button>
+                      </div>
+
+                     </div>
+                     <div class="p-0 mb-4">
+                      <div class="mb-4 text-center headersquare corner-top-right  my-opacity my-shadow-bg abouttext   p-4  ">
+                        <h3 class="m-0 align-middle d-flex justify-content-center" >"...art taught me how to program..." </h3>
+                     </div>
+                     </div>
+
+                  </div>
+               </div>
+            </div>
+         </section> <!-- end about -->
+            
+         <section id="skills" class="gen-background my-shadow-bg pb-0 mb-5 position-relative">
+            <div class="container-md  ">
+               <div class="row semicircle3 p-4 pb-0">
+                  <div class="col-lg-4 align-self-center myz p-0">
+                     <h2 class="sectionheading mb-3">skills</h2>
+ 
+                     <p class="headersquare corner-bt-right   my-shadow-bg mb-0 p-4 m-lg-4 ms-0 ms-lg-0 mb-lg-0">These are technologies i have worked the most with.
+                    I am always happy to explore the new technologies and find ways to do more for less time</p>
+                  </div>
+               </div>
+               <div class="row     position-relative myz p-4" >
+                  <div class=" col-6 col-md-4 p-0 d-flex align-self-stretch  ">
+                    <div id="languages" class="w-100 headersquare corner-bt-right my-shadow-bg  p-4 me-4   ">
+                      <h3 class="pb-3 text-uppercase m-0 p-0 pb-3">languages</h3>
+                      <ul >                                 
+                          <li>HTML</li>
+                          <li>CSS</li>
+                          <li>Javascript</li>
+                          <li>Python</li>
+                          <li>PHP</li>
+                          <li>mySQL</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-6  col-md-4 p-0   d-flex align-self-stretch  ">
+                    <div id="libraries" class="w-100 headersquare corner-top-right my-shadow-bg  p-4 me-md-4 ">
+                      <h3 class="pb-3 text-uppercase m-0 p-0 pb-3">libraries</h3>
+                      <ul>
+                          <li>Bootstrap</li>
+                          <li>SASS</li>
+                          <li>JEST</li>
+                          <li>Flask</li>
+                          <li>Django</li>
+                          <li>Wordpress</li>
+                          <li>jQuery</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4   p-0  mt-4 d-flex align-self-stretch mt-md-0 ">
+                    <div id="other" class="w-100 headersquare corner-top-left my-shadow-bg p-4 ">
+                      <h3 class="pb-3 text-uppercase m-0 p-0 pb-3">other</h3>
+                      <ul>
+                          <li>git</li>
+                          <li>github</li>
+                          <li>vite.js</li>
+                          <li>command line</li>
+                      </ul>
+                    </div>
+                  </div>
+               </div>
+               <div class="row justify-content-end p-4 pt-0 ">
+                  <div class="d-none d-lg-flex col-lg-4 justify-content-center m-4 mt-0">
+                    <!-- <div class="     "> -->
+                      <embed type="image/svg+xml" class="ms-4   w-25 " src="/src/svgs/thex.svg" aria-label="cross decor element ">
+                    <!-- </div> -->
+                    
+                  </div>
+                  <div class="col-lg-4  p-0">
+                    <div class="headersquare corner-bt-right  my-opacity my-shadow-bg  p-4">
+                      <p class="notes" >Tools i use for generative art that taught me how to program include: <br> Processing (java), openRNDR (kotlin), p5.js (javascript).</p>
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </section> <!-- end skills -->
+
+      </div> <!-- end container -->
+      
+      <!-- start portfolio section   -->
+      <div id="portfolio" class="container-fluid bg2  mb-5 ps-0 pe-0 ">
+
+
+        <div class="pt-4 mb-5">
+          <h2 class="sectionheading text-center mt-4 mb-1">Portfolio</h2>
+          <p class="text-center">A look at the projects i have been working on</p>
+        </div>
+        <div class="container-fluid ps-0 pe-0">
+          <div class="glider-contain container-fluid   ps-0 pe-0 hideforfirefox">
+
+            <div class="glider row pb-5 hideforfirefox">
+
+                  <div></div>
+
+                  <div class="portfolioCards corner-bt-left col-4 myz container   me-5 card-shadow">
+                    <div class="row p-4">
+                       <div class="col p-0">
+                          <div class="mb-4">
+                             <h3 class="p-3 text-uppercase corner-bt-left bg3 my-shadow-bg mb-0">antoniodegou.co.uk</h3>
+                          </div>
+                          <div class="ratio ratio-4x3 mb-4 ">
+                             <div class="port-img-url3 corner-bt-right bg2 my-shadow-bg port-img"></div>
+                          </div>
+                          <div class="p-3 mb-0 w-100 d-flex justify-content-center  ">
+                             <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-toggle="modal" data-bs-target="#bravoisdead">more info</button>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                  <div class="portfolioCards corner-bt-left col-4 myz container   me-5 card-shadow">
+                     <div class="row p-4">
+                        <div class="col p-0">
+                           <div class="mb-4">
+                              <h3 class="p-3 text-uppercase corner-bt-left bg3 my-shadow-bg mb-0">bravoisdead.com</h3>
+                           </div>
+                           <div class="ratio ratio-4x3 mb-4 ">
+                              <div class="port-img-url1 corner-bt-right bg2 my-shadow-bg port-img"></div>
+                           </div>
+                           <div class="p-3 mb-0 w-100 d-flex justify-content-center  ">
+                              <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-toggle="modal" data-bs-target="#bravoisdead">more info</button>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+
+                  <div class="portfolioCards corner-bt-left col-4 myz container   me-5 card-shadow">
+                    <div class="row p-4">
+                       <div class="col p-0">
+                          <div class="mb-4">
+                             <h3 class="p-3 text-uppercase corner-bt-left bg3 my-shadow-bg mb-0">madyard.co.uk</h3>
+                          </div>
+                          <div class="ratio ratio-4x3 mb-4 ">
+                             <div class="port-img-url2 corner-bt-right bg2 my-shadow-bg port-img"></div>
+                          </div>
+                          <div class="p-3 mb-0 w-100 d-flex justify-content-center  ">
+                             <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-toggle="modal" data-bs-target="#madyard">more info</button>
+                          </div>
+                       </div>
+                    </div>
+                 </div>
+
+                  <div></div>
+            </div>
+               
+            <div>
+              <button aria-label="Previous" class="glider-prev my-shadow-bg myz m-4">  
+                <i class="bi bi-caret-left-fill myarrows  corner-previous my-shadow-bg pt-5 pb-5   "></i>  
+              </button>
+              <button aria-label="Next" class="glider-next my-shadow-bg m-4">
+                <i class="bi bi-caret-right-fill myarrows   corner-next pt-5 pb-5"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+
+
+      </div> <!-- end portfolio section   -->
+
+
+       
+      <!-- contact and footer section   -->
+      <div class="container mt-3 ">
+         <div  id="contact" class="gen-background my-shadow-bg  ">
+            <div class="container  semicircle4 p-4">
+               <h2 class="sectionheading text-center">contact me</h2>
+               <p class=" text-center">Happy to hear from you!</p>
+
+               <div class="row d-flex justify-content-center">
+                  <div class="col-lg-6 myz">
+                     <form id="contactForm"   action="https://formspree.io/f/xayzwker"
+                        method="POST">
+                        <!-- Name input -->
+                        <div class="mb-3  ">
+                           <label class="form-label" for="name">Name</label>
+                           <input class="form-control corner-bt-left" id="name" type="text" placeholder="Name" name="name" >
+                        </div>
+                        <!-- Email address input -->
+                        <div class="mb-3 ">
+                           <label class="form-label" for="emailAddress">Email Address</label>
+                           <input class="form-control corner-bt-right" id="emailAddress" type="email" placeholder="Email Address"  name="email">
+                        </div>
+                        <!-- Message input -->
+                        <div class="mb-3 ">
+                           <label class="form-label" for="message">Message</label>
+                           <textarea class="form-control corner-top-right" id="message"  placeholder="Message" style="height: 10rem;" name="message"></textarea>
+                        </div>
+                        <!-- Form submit button -->
+                        <div class="d-flex justify-content-center position-relative   mt-4">
+                           <button id="my-form-button" class="mybtn mybtn-font my-shadow-bg" type="submit">Submit</button>
+                        </div>
+                        <div class="d-flex justify-content-center position-relative   mt-5">
+                           <p id="my-form-status" class="text-center"></p>
+                        </div>
+                     </form>
+                  </div>
+
+               </div>
+            </div>
+         </div> <!-- end contact section   -->
+
+         <footer class="footer-bg my-shadow-bg mb-3 container mt-5">
+            <div class="row">
+               <nav class="navbar navbar-expand   ">
+                  <div class="container-fluid">
+                     <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNav">
+                        <ul class="navbar-nav row justify-content-center  d-flex justify-content-center">
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link active" aria-current="page" href="#header" aria-label="Scrolls to header section">Home</a>
+                           </li>
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link" href="#about" aria-label="Scrolls to about section">About</a>
+                           </li>
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link" href="#skills" aria-label="Scrolls to skills section">Skills</a>
+                           </li>
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link" href="#portfolio" aria-label="Scrolls to portfolio section">Portfolio</a>
+                           </li>
+                           <li class="nav-item col-md d-flex justify-content-center">
+                              <a class="nav-link" href="#contact" aria-label="Scrolls to contact section">Contact</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </div>
+               </nav>
+            </div>
+            <div class="row">
+               <ol class=" col d-flex justify-content-center m-0">
+                  <li class="  list-inline-item m-3">
+                     <a class="nav-link  " target="_blank" href="https://github.com/antonioDeGouv" href="https://github.com/antonioDeGouv" aria-label="Go to Antonio's github page (opens in new tab)"><i class="bi bi-github"></i> github</a>
+                  </li>
+                  <li class=" list-inline-item m-3">
+                     <a class="nav-link" target="_blank" href="https://www.linkedin.com/in/antoniodegou/"  aria-label="Go to Antonio's linkedin page (opens in new tab)"  ><i class="bi bi-linkedin"></i> linkedin</a>
+                  </li>
+               </ol>
+            </div>
+            <div class="row">
+               <ol class=" col d-flex justify-content-center">
+                  <li class="  list-inline-item m-3">
+                     <a class="nav-link  " target="_blank" href="https://drive.google.com/file/d/13zu7uoOZuY3pvG7RGKnN8xNibj_UyDSf/view?usp=share_link" aria-label="Go to google drive page with CV document (opens in new tab)"><i class="bi bi-file-earmark-person"></i> see CV</a>
+                  </li>
+               </ol>
+            </div>
+            <div class="d-flex justify-content-center ">
+               <p>© <span id="currentYear"></span>, Antonio de Gou. All Right Reserved</p>
+            </div>
+         </footer> <!-- end footer section   -->
+      </div>
+      <!-- Scrollable modal of about section -->
+      <article class="modal fade   " id="mymodal"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog headersquare  corner-bt-right">
+            <div class="modal-content headersquare  corner-bt-right">
+               <div class="modal-header">
+                  <h5 class="modal-title" id="staticBackdropLabel">More About me</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                <h3>Code has always been present</h3>
+                <p>I have been playing with HTML and CSS since I got the internet in the 90s, from my first web page provided by my internet provider to the customisable pages on myspace.
+                  I later started tinkering with WordPress themes and have been using websites associated with projects or jobs I had in the video Industry.
+                  Parallel to all of this, I was always interested in the arts, more as a hobby, and started to explore generative art. </p>
+                <p>
+                  <h3>Art taught me how to program</h3>
+                  I started with an interest in art, but my interest grew in creating systems. I learned concepts like OOP or Recursion without knowing I was learning them. 
+                </p>
+                <div>
+                <p>Take a look at my procedural art here: </p>
+                <a class="nav-link" target="_blank" href="https://bravoisdead.com" aria-label="Go to Antonio's art page (opens in new tab)">Bravoisdead</a>
+                <br>
+                </div>
+                <h3>Programing becomes the main goal</h3>
+                <p>It would be a short time until I surrendered to programming. And the joy was more in solving problems than the results in themselves.</p>
+                <h3>Becoming industry ready</h3>
+                <p>In 2022 I decided to take this further and join Code Institute. I wanted to work in the industry, so I wanted to make sure that not only was I programming correctly, but I knew and understood the industry ways.</p>
+                </div>
+               <div class="modal-footer myz">
+                  <button type="button" class="mybtn mybtn-font my-shadow-bg " data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </article>
+
+
+            <!-- Scrollable modal of porfolio antonio de gou section -->
+            <article class="modal fade   " id="antoniodegou"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog headersquare  corner-bt-right">
+                 <div class="modal-content headersquare  corner-bt-right">
+                    <div class="modal-header">
+                       <h5 class="modal-title" >Antonio de Gou</h5>
+                       <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                     <h3>Techonologies used</h3>
+                     <p>HTML, SASS, javascript, vitejs, formspree, bootstrap 5</p>
+                     <h3>Live project</h3>
+                     <a class="nav-link" target="_blank" href="#home" aria-label="Go to Antonio's art page (opens in new tab)">Bravoisdead</a>
+                     <br>
+                     <h3>Description</h3>
+                     <p>Bravoidead is a website for my generative art that showcases my artwork made with programming. 
+                       Even though I used WordPress, I used the site builder Oxygen, which is very flexible as I can use HTML, CSS and PHP.
+                       I chose WordPress because it was easy to maintain and relatively quick to build. </p>
+                    </div>
+                    <div class="modal-footer myz">
+                       <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-dismiss="modal">Close</button>
+                    </div>
+                 </div>
+              </div>
+           </article>
+
+
+      <!-- Scrollable modal of porfolio bravoisdead section -->
+      <article class="modal fade   " id="bravoisdead"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog headersquare  corner-bt-right">
+            <div class="modal-content headersquare  corner-bt-right">
+               <div class="modal-header">
+                  <h5 class="modal-title" >BravoIsDead</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                <h3>Techonologies used</h3>
+                <p>HTML, CSS, WORDPRESS, PHP, Metabox</p>
+                <h3>Live project</h3>
+                <a class="nav-link" target="_blank" href="https://bravoisdead.com" aria-label="Go to Antonio's art page (opens in new tab)">Bravoisdead</a>
+                <br>
+                <h3>Description</h3>
+                <p>Bravoidead is a website for my generative art that showcases my artwork made with programming. 
+                  Even though I used WordPress, I used the site builder Oxygen, which is very flexible as I can use HTML, CSS and PHP.
+                  I chose WordPress because it was easy to maintain and relatively quick to build. </p>
+               </div>
+               <div class="modal-footer myz">
+                  <button type="button" class="mybtn mybtn-font my-shadow-bg" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </article>
+      <!-- Scrollable modal of porfolio madyard.co.uk section -->
+      <article class="modal fade   " id="madyard"   data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+         <div class="modal-dialog headersquare  corner-bt-right">
+            <div class="modal-content headersquare  corner-bt-right">
+               <div class="modal-header">
+                  <h5 class="modal-title"  >Madyard</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               </div>
+               <div class="modal-body">
+                <h3>Techonologies used</h3>
+                <p>HTML, CSS, WORDPRESS, PHP, ISOTOPE js, Oxygen Builder, Metabox</p>
+                <h3>Live project</h3>
+                <a class="nav-link" target="_blank" href="https://madyard.co.uk" aria-label="Go to madyard art page (opens in new tab)">Madyard</a>
+                <br>
+                <h3>Description</h3>
+                <p>Madyard is a plant business I helped to set up that sells plants from Madeira (my home town) and Canaries in the UK.
+                  My partner is very computer challenged, so the website had to be easy to update the never-ending ins and out of plant stock.
+                  I used Isotope JS to create a dynamic plant catalogue that you can sort and filter according to several categories.  </p>
+               </div>
+               <div class="modal-footer">
+                  <button  type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               </div>
+            </div>
+         </div>
+      </article>
+      
+   </body>
+</html>
