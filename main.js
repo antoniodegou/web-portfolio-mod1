@@ -1,6 +1,7 @@
 import './style.scss'
 import * as bootstrap from './node_modules/bootstrap/'
 import * as gliderjs from './node_modules/glider-js/'
+// import * as SVGInject from './node_modules/@iconfu/svg-inject/dist/svg-inject.min.js'
 
 // porfolio carrosel
 

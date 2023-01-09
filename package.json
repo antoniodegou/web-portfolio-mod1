@@ -9,6 +9,7 @@
     "preview": "vite preview"
   },
   "devDependencies": {
+    "@iconfu/svg-inject": "^1.2.3",
     "bootstrap": "^5.2.3",
     "bootstrap-icons": "^1.10.2",
     "glider-js": "^1.7.8",

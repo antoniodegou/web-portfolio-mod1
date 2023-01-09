@@ -5,9 +5,9 @@
 	 viewBox="0 0 1000 692.37" style="enable-background:new 0 0 1000 692.37;" xml:space="preserve">
 <title id="mylogo">antonio de gou logo</title>
 <g id="go">
-	<polygon points="35.71,339.63 571.43,648.93 571.43,30.33 	"/>
+	<polygon class="in logoBG " points="35.71,339.63 571.43,648.93 571.43,30.33 	"/>
 </g>
 <g id="lo">
-	<polygon points="961.03,339.63 649.74,159.9 649.74,519.36 	"/>
+	<polygon class="in logoBG" points="961.03,339.63 649.74,159.9 649.74,519.36 	"/>
 </g>
 </svg>
