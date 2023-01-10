@@ -1,7 +1,7 @@
 import './style.scss'
 import * as bootstrap from './node_modules/bootstrap/'
 import * as gliderjs from './node_modules/glider-js/'
-// import * as SVGInject from './node_modules/@iconfu/svg-inject/dist/svg-inject.min.js'
+// import * as SVGInject from './node_modules/@iconfu/svg-inject/dist/svg-inject.js'
 
 // porfolio carrosel
 
@@ -77,3 +77,8 @@ new Glider(document.querySelector('.glider'), {
   //get footer current year
 
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
+
+
+// inject SVG
+
+SVGInject(document.querySelectorAll("img.injectable"));
