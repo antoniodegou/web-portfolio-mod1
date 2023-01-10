@@ -1,6 +1,16 @@
+
 export default {
-    base: "./",
+    base: "/",
     build: {
-      outDir : "docs"
+      outDir : "docs",
+      rollupOptions: {
+        output: {
+          entryFileNames: `assets/[name].js`,
+          chunkFileNames: `assets/[name].js`,
+          assetFileNames: `assets/[name].[ext]`,
+        },
+
+      },
     }
+
   }

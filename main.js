@@ -1,7 +1,12 @@
 import './style.scss'
 import * as bootstrap from './node_modules/bootstrap/'
 import * as gliderjs from './node_modules/glider-js/'
+import imgUrl from './src/svgs/assets/479E3A03679BC0F4.png'
+import './src/svgs/self.svg'
 // import * as SVGInject from './node_modules/@iconfu/svg-inject/dist/svg-inject.js'
+
+
+
 
 // porfolio carrosel
 
@@ -9,11 +14,12 @@ new Glider(document.querySelector('.glider'), {
     slidesToScroll: 1,
     slidesToShow: 1.5,
     draggable: true,
-    dots: '.dots',
+    // dots: '.dots',
     arrows: {
       prev: '.glider-prev',
       next: '.glider-next'
-    },
+    }
+    ,
     responsive: [
         {
           // screens greater than >= 768px
@@ -81,4 +87,9 @@ document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
 // inject SVG
 
+SVGInject.setOptions({
+  makeIdsUnique: false
+})
 SVGInject(document.querySelectorAll("img.injectable"));
+
+document.getElementById('Layer_1_00000001665013403481067850000005062623840399501456_').href = '/assets/'+imgUrl
