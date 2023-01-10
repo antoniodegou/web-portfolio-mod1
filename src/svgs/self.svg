@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <?xml-stylesheet href="/style.scss"?>
-<!-- Generator: Adobe Illustrator 26.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg role="img" aria-labelledby="picture" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve">
- <title id="picture">picture of antonio de gou</title>
+<svg role="img"   version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve" labelledby="self-title" aria-describedby="self-desc">
+<title id="self-title"> Picture of antonio</title>
+<desc id="self-desc">composoting graphic image with selfie of antonio</desc>
+<g  aria-label="Composoting image of Antonio">
 <g>
 	<path class="self-red" d="M523.91,187.93c-159.68,0-289.12,129.45-289.12,289.12c0,159.68,129.45,289.12,289.12,289.12
 		s289.12-129.45,289.12-289.12C813.03,317.37,683.59,187.93,523.91,187.93z M523.91,647.78c-94.29,0-170.73-76.44-170.73-170.73
 		c0-94.29,76.44-170.73,170.73-170.73c94.29,0,170.73,76.44,170.73,170.73C694.64,571.34,618.2,647.78,523.91,647.78z"/>
 	<g id="_x30_SOPHf.tif">
-		
 		<image style="overflow:visible;" width="575" height="983" id="Layer_1_00000001665013403481067850000005062623840399501456_" href="assets/479E3A03679BC0F4.png"  transform="matrix(0.588 0 0 0.588 353.7222 84.83)">
 		</image>
 	</g>
@@ -24,7 +24,7 @@
 		c-11.61-3.75-17.87-11.26-17.87-25.19v-32.87c0-6.07-2.86-8.75-7.15-8.75h-7.68v-21.08h13.76c15.36,0,26.08,9.47,26.08,24.48v34.48
 		c0,12.15,7.33,18.22,19.83,18.22v21.44c-12.51,0-19.83,6.07-19.83,18.22v34.48c0,15.01-10.72,24.48-26.08,24.48H622.43z"/>
 </g>
-<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="915.105" y1="183.5883" x2="981.2023" y2="183.5883">
+<linearGradient id="the-gradient" gradientUnits="userSpaceOnUse" x1="915.105" y1="183.5883" x2="981.2023" y2="183.5883">
 	<stop  offset="0" class="selfgrad1"  />
 	<stop  offset="1" class="selfgrad2"  />
 </linearGradient>
@@ -48,4 +48,5 @@
 	<stop  offset="1" class="selfgrad2"  />
 </linearGradient>
 <circle style="fill:url(#SVGID_00000088129840299566660430000016416483602628677537_);" cx="33.48" cy="713.61" r="23.33"/>
+</g>
 </svg>
