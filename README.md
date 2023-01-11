@@ -216,6 +216,7 @@ Google Dev Tools - To troubleshoot and test features and solve issues with respo
 Favicon.io To create favicon.
 Shields.io To add badges to the README.
 Hoverify - responsiveness testing on several devices
+freeformatter.com - to prettify HTML CSS and javascript files
 
 ### Vite JS (Frontend Tooling)
 
@@ -294,7 +295,7 @@ To clone the repository:
 ##### Installing all dependencies
 
 ```
-cd "folder of the project"
+cd "folder of the project."
 npm install
 ```
 
@@ -318,6 +319,28 @@ npm run build
 
 ## Testing
 
+### W3C validator
+
+I used [W3C](https://muffingroup.com/blog/yellow-color-palette/) to validator the HTML. It was helpful for unclosed tags. And taught me not to use a closing slash on self-closing tags like <img> vs <img/>.
+
+### ViteJS
+
+Due to its nature, it will not live-reload as soon as there is any error on CSS or javascript, and it also says where it found the error.
+
+### Chrome Lighthouse
+
+I was able to get 100 on all fronts on Lighthouse.
+
+![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/lighthouse.jpg)
+
+### Wave
+
+Even if Lighthouse has an accessibility check, I double-checked with Wave and got zero errors, including in contrast.
+
+![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/wave.jpg)
+
+
+
 ## Credits
 
 ### Design Inspirations 
@@ -337,6 +360,8 @@ Favicon generator [here](https://realfavicongenerator.net/)
 
 Font End tool [Vite js](https://vitejs.dev/guide/)
 
+Pretiffy [Pretiffy](https://www.freeformatter.com/html-formatter.html)
+
 ### CSS solutions
 
 Half Circle on section backgrounds [here](http://jsfiddle.net/hashem/u78bQ/1/)
@@ -349,13 +374,14 @@ Button Styles [here](https://codepen.io/screenthink/pen/ZeOyjP)
 
 Scroll Bar Styling [here](https://www.digitalocean.com/community/tutorials/css-scrollbars)
 
+Pretiffy [Pretiffy](https://www.freeformatter.com/css-beautifier.htm)
+
 
 ### JavaScript Solutions
 
 Get the current year dynamically on the footer [here](https://stackoverflow.com/questions/20903782/how-to-get-the-current-year-using-css)
 
 Make SVG accessible [here](https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/)
-
 
 Functioning Form, tutorial in login dashboard [here](https://formspree.io/)
 
