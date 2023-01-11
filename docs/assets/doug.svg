@@ -4,7 +4,7 @@
 	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve" labelledby="dougtitle" aria-describedby="dougdesc">
 <title id="dougtitle"> dougnout</title>
 <desc id="dougdesc">decorative design element dougnout</desc>
-<g aria-label="decorative doughnout element">
+<g>
 <linearGradient id="lime-gradient"  gradientUnits="userSpaceOnUse" x1="149.3661" y1="149.7144" x2="850.1171" y2="850.4653">
 	<stop  offset="0" class="selfgrad1" />
 	<stop  offset="1" class="selfgrad2" />

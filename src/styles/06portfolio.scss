@@ -1,101 +1,117 @@
-.portfolioCards{
-  background: $mini-cards-bg;
-  box-shadow: $my-shadow;
-  z-index:3;
+.portfolioCards {
+	background: $mini-cards-bg;
+	box-shadow: $my-shadow;
+	z-index: 3;
 }
 
-.bg2{
-  background:  $circle-bg;
+.bg2 {
+	background: $circle-bg;
 }
 
-.bg3{
-    background:  $bg-bg;
-    color: $my-dim-white!important;
-  }
+.bg3 {
+	background: $bg-bg;
+	color: $my-dim-white !important;
+}
 
-  .glider-track{
-    padding:0;
-  }
-  .card-shadow{
-    box-shadow:
-    3.6px 0px 7.8px -14px rgba(0, 0, 0, 0.31),
-    4.5px 0px 10.3px -14px rgba(0, 0, 0, 0.469),
-    5.2px 0px 11.6px -14px rgba(0, 0, 0, 0.542),
-    6px 0px 12.8px -14px rgba(0, 0, 0, 0.576),
-    7.2px 0px 14.8px -14px rgba(0, 0, 0, 0.63),
-    12px 0px 19px -14px rgba(0, 0, 0, 1)
-  ;
-  }
+.glider-track {
+	padding: 0;
+}
+
+.card-shadow {
+	box-shadow:
+		3.6px 0px 7.8px -14px rgba(0, 0, 0, 0.31),
+		4.5px 0px 10.3px -14px rgba(0, 0, 0, 0.469),
+		5.2px 0px 11.6px -14px rgba(0, 0, 0, 0.542),
+		6px 0px 12.8px -14px rgba(0, 0, 0, 0.576),
+		7.2px 0px 14.8px -14px rgba(0, 0, 0, 0.63),
+		12px 0px 19px -14px rgba(0, 0, 0, 1);
+}
 
 
-
-.port-img-url1{
-    background-image: url("/src/img/bravoisdead.com_.jpg");
+.port-img-url1 {
+	background-image: url("/src/img/bravoisdead.com_.jpg");
 
 }
 
-.port-img-url2{
-    background-image: url("/src/img/madyard.co.uk_.jpg");
-}
-.port-img-url3{
-  background-image: url("/src/img/antoniodegou.jpg");
+.port-img-url2 {
+	background-image: url("/src/img/madyard.co.uk_.jpg");
 }
 
-.port-img{
-    background-repeat: no-repeat;
-    background-position :  center  top;
-    background-size: 100%;
-    animation: myscrollout 6.0s ;
+.port-img-url3 {
+	background-image: url("/src/img/antoniodegou.jpg");
 }
 
-.port-img:hover{
-    background-position :  center  bottom;
-    animation: myscroll 6.0s ;
+.port-img {
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-size: 100%;
+	animation: myscrollout 6.0s;
+}
+
+.port-img:hover {
+	background-position: center bottom;
+	animation: myscroll 6.0s;
 }
 
 @keyframes myscroll {
-    from {background-position :  center  top;}
-    to {background-position :  center  bottom;}
-  }
+	from {
+		background-position: center top;
+	}
 
-  @keyframes myscrollout {
-    from {background-position :  center  bottom;}
-    to {background-position :  center  top;}
-  }
-
-  .whitetext{
-    color: var(--myWhite);
-    text-align: center;
-  }
-
-.corner-previous{
-  border-radius: 0 $my-border-radius $my-border-radius 0     ;
-  border-radius: 0 50% 50% 0     ;
+	to {
+		background-position: center bottom;
+	}
 }
 
-.corner-next{
-  border-radius:  $my-border-radius   0  0 $my-border-radius     ;
-  border-radius:  100%   0  0  100%    ;
-}
-.myarrows{
-    font-size: 3.5rem;
-    box-shadow: $my-shadow;
-    background:  $general-bg;
-}
-.glider-next{
-  right:-24px;
-}
-.glider-prev{
-  left:-24px;
-}
-.glider-next.disabled, .glider-prev.disabled{
-  color:$mydimred;
+@keyframes myscrollout {
+	from {
+		background-position: center bottom;
+	}
+
+	to {
+		background-position: center top;
+	}
 }
 
-.glider-next, .glider-prev {
-color:$myred;
+.whitetext {
+	color: var(--myWhite);
+	text-align: center;
 }
 
-.hideforfirefox{
-  overflow:hidden!important;
+.corner-previous {
+	border-radius: 0 $my-border-radius $my-border-radius 0;
+	border-radius: 0 50% 50% 0;
+}
+
+.corner-next {
+	border-radius: $my-border-radius 0 0 $my-border-radius ;
+	border-radius: 100% 0 0 100%;
+}
+
+.myarrows {
+	font-size: 3.5rem;
+	box-shadow: $my-shadow;
+	background: $general-bg;
+}
+
+.glider-next {
+	right: -24px;
+}
+
+.glider-prev {
+	left: -24px;
+}
+
+.glider-next.disabled,
+.glider-prev.disabled {
+	color: $mydimred;
+}
+
+.glider-next,
+.glider-prev {
+	color: $myred;
+}
+
+.hideforfirefox {
+	overflow: hidden !important;
 }

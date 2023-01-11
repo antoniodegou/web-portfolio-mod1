@@ -4,7 +4,7 @@
 	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve" labelledby="head-image-title" aria-describedby="head-image-desc">
 <title id="head-image-title"> Header image</title>
 <desc id="head-image-desc">rotating header image, decorative with name and cross</desc>
-<g  aria-label="decorative header image">
+<g>
 <g>
 	<polygon id="cruz_x5F_" class="svg-head-cross-fill" points="623.85,746.75 702.07,688.13 568.42,509.8 746.75,376.15 688.13,297.93 509.8,431.58 
 		376.15,253.25 297.93,311.87 431.58,490.2 253.25,623.85 311.87,702.07 490.2,568.42 	"/>

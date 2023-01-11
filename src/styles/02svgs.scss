@@ -1,136 +1,153 @@
 // header image
 
-.svg-head-font{
-  font-family: $heading-font;
-  fill: $general-bg;
+.svg-head-font {
+	font-family: $heading-font;
+	fill: $general-bg;
 }
 
-.svg-head-font-size{
-  font-size:95.2283px;
+.svg-head-font-size {
+	font-size: 95.2283px;
 }
 
-.svg-head-cross-fill, .svg-tri-fill{
-  fill:$my-blue;
+.svg-head-cross-fill,
+.svg-tri-fill {
+	fill: $my-blue;
 }
 
-.svg-head-braces-fill,#go, #lo{
-  fill:$general-bg;
-}
-
-
-.svg-shadow{
-    filter: drop-shadow(3px 3px 25px rgba($general-bg,0.5));
-}
-
-
-.tria{
-    position: absolute;
-    width:10%;
-    left: 50%;
-    top:50%;
-    transform: translate(-50%, -50%);
-}
-  .tri{
-    position: absolute;
-    left:-50%;
-    top:-50%;
-    animation: cowmove 6s infinite;   
-    padding:5px;
+.svg-head-braces-fill,
+#go,
+#lo {
+	fill: $general-bg;
 }
 
 
+.svg-shadow {
+	filter: drop-shadow(3px 3px 25px rgba($general-bg, 0.5));
+}
+
+
+.tria {
+	position: absolute;
+	width: 10%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.tri {
+	position: absolute;
+	left: -50%;
+	top: -50%;
+	animation: cowmove 6s infinite;
+	padding: 5px;
+}
 
 
 @keyframes cowmove {
-    0% {
-      transform: translateY(20%) rotate(0);
-    }
-    30% {
-      transform: translateY(80%) rotate(0);
-    }
-    50% {
-      transform: translateY(80%) rotate(180deg);
-    }
-    80% {
-      transform: translateY(20%) rotate(180deg);
-    }
-    100% {
-      transform: translateY(20%) rotate(360deg);
-    }
-  }
+	0% {
+		transform: translateY(20%) rotate(0);
+	}
 
+	30% {
+		transform: translateY(80%) rotate(0);
+	}
 
-  // self svg and doughnut
+	50% {
+		transform: translateY(80%) rotate(180deg);
+	}
 
-  .self-red{fill:$myred;}
-  .self-dark{fill:$general-bg;}
-  .self-link1{fill:url(#the-gradient);}
-  .self-light{fill:$my-white;}
-  .self-link2{fill:url(#SVGID_00000159431354812606204790000013109046028296011664_);}
-  
+	80% {
+		transform: translateY(20%) rotate(180deg);
+	}
 
-
-.doug-01{
-  fill:url(#lime-gradient);
- 
+	100% {
+		transform: translateY(20%) rotate(360deg);
+	}
 }
-  
-  .selfgrad1 {
-    stop-color:$myred;
-  }
-  
-  .selfgrad2 {
-    stop-color:$mydimred;
-  }
 
 
-  // rotating circle
+// self svg and doughnut
 
-  .cir{
+.self-red {
+	fill: $myred;
+}
 
-    position: absolute;
-    width:30%;
-    height:30%;
-    transform: translate(-50%, -50%);
-    left:0;
-    top:0%;
-  }
-  
-  .circle{
-    position: absolute;
-    padding:5px;
-    animation: rotate 3s linear infinite;
-  
-  }
+.self-dark {
+	fill: $general-bg;
+}
+
+.self-link1 {
+	fill: url(#the-gradient);
+}
+
+.self-light {
+	fill: $my-white;
+}
+
+.self-link2 {
+	fill: url(#SVGID_00000159431354812606204790000013109046028296011664_);
+}
 
 
+.doug-01 {
+	fill: url(#lime-gradient);
 
-@keyframes rotate{
-    to{ 
-      transform: rotate(360deg); 
-    }
-  }
+}
 
+.selfgrad1 {
+	stop-color: $myred;
+}
+
+.selfgrad2 {
+	stop-color: $mydimred;
+}
+
+
+// rotating circle
+
+.cir {
+
+	position: absolute;
+	width: 30%;
+	height: 30%;
+	transform: translate(-50%, -50%);
+	left: 0;
+	top: 0%;
+}
+
+.circle {
+	position: absolute;
+	padding: 5px;
+	animation: rotate 3s linear infinite;
+
+}
+
+
+@keyframes rotate {
+	to {
+		transform: rotate(360deg);
+	}
+}
 
 
 //logo image
 
-.svgimage{
-    width:100px;
-    height:50px;
+.svgimage {
+	width: 100px;
+	height: 50px;
 }
 
-  
+
 // logo
 
-.logocolor, .arrows{
-   fill:$general-bg; 
+.logocolor,
+.arrows {
+	fill: $general-bg;
 }
-
 
 
 //sprites
 
 .logoBG {
-  fill: $general-bg;
+	fill: $general-bg;
 }

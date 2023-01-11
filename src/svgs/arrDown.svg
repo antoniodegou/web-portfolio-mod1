@@ -4,7 +4,7 @@
 	 viewBox="0 0 1000 1000" style="enable-background:new 0 0 1000 1000;" xml:space="preserve" labelledby="arrowdown-title" aria-describedby="arrowdown-desc">
 <title id="arrowdown-title"> decorative arrow down</title>
 <desc id="arrowdown-desc">decorative arrow down</desc>
-<g  aria-label="decorative arrow down">
+<g>
 <polygon class="arrows" points="500,857.37 995,0 5,0 "/>
 </g>
 </svg>

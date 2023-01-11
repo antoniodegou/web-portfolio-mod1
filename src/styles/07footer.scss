@@ -1,17 +1,20 @@
-.footer-bg{
-    border: 2px solid $my-blue;
-    border-radius: $my-border-radius;
+.footer-bg {
+	border: 2px solid $my-blue;
+	border-radius: $my-border-radius;
 }
 
-.footer-bg p, .footer-bg a{
-    color: $my-white!important;
+.footer-bg p,
+.footer-bg a {
+	color: $my-white !important;
 }
 
-footer li a,footer .nav-link:hover,footer .nav-link:focus  {
-    color: $mydimred!important;
- }
- 
+footer li a,
+footer .nav-link:hover,
+footer .nav-link:focus {
+	color: $mydimred !important;
+}
 
- footer div p {
-    font-size: 0.8rem;
- }
+
+footer div p {
+	font-size: 0.8rem;
+}

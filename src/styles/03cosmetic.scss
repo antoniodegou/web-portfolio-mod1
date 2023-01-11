@@ -1,147 +1,171 @@
- // FONTS
+// FONTS
 
- html, body{
-    font-size: $root-font-size;
-    font-family: $text-font;
- }
-
- .nav-link{
-    font-size: $smaller-font;
- }
-
- h1, .nav-link, .mybtn-font, .sectionheading{
-    font-family: $heading-font;
+html,
+body {
+	font-size: $root-font-size;
+	font-family: $text-font;
 }
 
-p, h1,h2, h3, .nav-link  , .mybtn-font, .mybtn-font a,li, h4, label{
-    color: $general-bg!important;
+.nav-link {
+	font-size: $smaller-font;
 }
 
-.nav-link:hover, .nav-link:focus {
-    color: $general-bg!important;
-    text-decoration: underline;
+h1,
+.nav-link,
+.mybtn-font,
+.sectionheading {
+	font-family: $heading-font;
 }
 
-.sectionheading{
-    font-size: $tittle-font-size;
-    line-height: 0.9;
-    margin-bottom: 2.5rem;
+p,
+h1,
+h2,
+h3,
+.nav-link,
+.mybtn-font,
+.mybtn-font a,
+li,
+h4,
+label {
+	color: $general-bg !important;
 }
 
-h2, h3{
-    font-size: $subtittle-font-size;
+.nav-link:hover,
+.nav-link:focus {
+	color: $general-bg !important;
+	text-decoration: underline;
+}
+
+.sectionheading {
+	font-size: $tittle-font-size;
+	line-height: 0.9;
+	margin-bottom: 2.5rem;
+}
+
+h2,
+h3 {
+	font-size: $subtittle-font-size;
 }
 
 
-.mybtn-font,.mybtn-font a {
-    text-transform: uppercase;
-    text-decoration: none;
+.mybtn-font,
+.mybtn-font a {
+	text-transform: uppercase;
+	text-decoration: none;
 }
 
-.offcanvas.show  .nav-link{
-    font-size: $offcanvas-font-size;
-    color: $my-white!important;
+.offcanvas.show .nav-link {
+	font-size: $offcanvas-font-size;
+	color: $my-white !important;
 }
 
-ul{
-    padding:0;
-    margin:0;
- 
-}
-ul li{
-    list-style-type: none;
+ul {
+	padding: 0;
+	margin: 0;
+
 }
 
-.notes{
-    font-size: $smaller-font;
+ul li {
+	list-style-type: none;
 }
 
-.my-opacity{
-    opacity: .7;
+.notes {
+	font-size: $smaller-font;
+}
+
+.my-opacity {
+	opacity: .7;
 }
 
 // backgrounds
 
-body{
-    background: $bg-bg;
+body {
+	background: $bg-bg;
 }
 
 
-.gen-background{
-    background: $cards-bg;
-    border-radius: $my-border-radius;
+.gen-background {
+	background: $cards-bg;
+	border-radius: $my-border-radius;
 }
 
 
-.headersquare, .navbar-toggler, .off-canvas{
-    background: $mini-cards-bg;
+.headersquare,
+.navbar-toggler,
+.off-canvas {
+	background: $mini-cards-bg;
 }
 
-.navbar-toggler:focus{
-    border: 0px solid $general-bg;
-    box-shadow: $my-shadow;
+.navbar-toggler:focus {
+	border: 0px solid $general-bg;
+	box-shadow: $my-shadow;
 }
 
-.offcanvas.show:not(.hiding){
-	background  : $cards-bg;
+.offcanvas.show:not(.hiding) {
+	background: $cards-bg;
 }
 
 .form-control {
-    background: $mini-cards-bg;
-    box-shadow: $my-shadow;
+	background: $mini-cards-bg;
+	box-shadow: $my-shadow;
 }
 
 // cosmetic utilities
 
-html{
-    scroll-behavior: smooth; 
+html {
+	scroll-behavior: smooth;
 }
 
-.myz{
-    z-index:3!important;
+.myz {
+	z-index: 3 !important;
 }
 
-.corner-top-left{
-    border-radius: 0 $my-border-radius  $my-border-radius   $my-border-radius ;
+.corner-top-left {
+	border-radius: 0 $my-border-radius $my-border-radius $my-border-radius ;
 }
-.corner-top-right{
-    border-radius: $my-border-radius 0 $my-border-radius   $my-border-radius ;
+
+.corner-top-right {
+	border-radius: $my-border-radius 0 $my-border-radius $my-border-radius ;
 }
-.corner-bt-left{
-    border-radius: $my-border-radius $my-border-radius  $my-border-radius 0;
+
+.corner-bt-left {
+	border-radius: $my-border-radius $my-border-radius $my-border-radius 0;
 }
-.corner-bt-right{
-    border-radius: $my-border-radius $my-border-radius  0 $my-border-radius ;
+
+.corner-bt-right {
+	border-radius: $my-border-radius $my-border-radius 0 $my-border-radius ;
 }
- 
- .my-shadow-bg{
-     box-shadow:     2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
-     6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
-     12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
-     22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
-     41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
-     100px 100px 80px rgba(0, 0, 0, 0.07),
-     inset 0px 0px 10px rgba(0, 0, 0, 0.06);
-  }
+
+.my-shadow-bg {
+	box-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
+		6.7px 6.7px 5.3px rgba(0, 0, 0, 0.028),
+		12.5px 12.5px 10px rgba(0, 0, 0, 0.035),
+		22.3px 22.3px 17.9px rgba(0, 0, 0, 0.042),
+		41.8px 41.8px 33.4px rgba(0, 0, 0, 0.05),
+		100px 100px 80px rgba(0, 0, 0, 0.07),
+		inset 0px 0px 10px rgba(0, 0, 0, 0.06);
+}
 
 // scroll bar
 
 body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-    scrollbar-width: thin;          /* "auto" or "thin" */
-    scrollbar-color: $my-white $my-white!important;   /* scroll thumb and track */ 
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: $bg-bg ;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: $my-white;    /* color of the scroll thumb */
-    border-radius: 20px 0 20px 0  ;       /* roundness of the scroll thumb */
-  }
+	width: 12px;
+	/* width of the entire scrollbar */
+	scrollbar-width: thin;
+	/* "auto" or "thin" */
+	scrollbar-color: $my-white $my-white !important;
+	/* scroll thumb and track */
+}
 
-  .scroller {
-    overflow-y: scroll;
-    scrollbar-color: #0A4C95 #C2D2E4!important;
-  }
+body::-webkit-scrollbar-track {
+	background: $bg-bg ;
+	/* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+	background-color: $my-white;
+	/* color of the scroll thumb */
+	border-radius: 20px 0 20px 0;
+	/* roundness of the scroll thumb */
+}
+

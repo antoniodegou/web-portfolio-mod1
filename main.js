@@ -86,10 +86,7 @@ document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 // inject SVG
 
 SVGInject.setOptions({
-  makeIdsUnique: false,
-  afterInject: function(){
-      document.getElementById('Layer_1_00000001665013403481067850000005062623840399501456_').href = "./dddd/ddd"
-  }
+  makeIdsUnique: false
 })
 SVGInject(document.querySelectorAll("img.injectable"));
 
