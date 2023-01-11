@@ -138,7 +138,7 @@ All Pages on the website are responsive and have the following:
 * Smooth scrolling from that works in all browsers.
 * Several SVGs integrated into the HTML file at times with animation.
 
-![browser info](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/favicon.jpeg)
+![browser info](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/favicon.jpg)
 
 
 ### Header (opening section)
@@ -197,10 +197,12 @@ Also, an "all right reserved" text and symbol.
 * Ditch form spree and have a more robust implementation of server-side form.
 * Ditch bootstrap to use Tailwind; it seems to be more of an industry standard.
 
+---
 
 ### Accessibility
 
-https://img.shields.io/badge/JS-gliderjs-red
+
+---
 
 ## Technologies Used
 
@@ -227,7 +229,7 @@ There is also a separation of production files and final files.
  HTML, CSS, JavaScript
 
 As expected, I used HTML for structure, CSS for style and JavaScript for interactivity and functionality. Important to mention that there is heavy use of SVG for all graphic assets.
-I used the HTML <embed> tag to embed the SVG. Even if I could use it inline SVG, I prefer to have them in separate files so the HTML wouldn't be too long and verbose. However, there are several ways to integrate SVG, but <embed> seems to be the best way to keep some animations and styles on the CSS files.
+
 
 ### Libraries Used
 
@@ -248,9 +250,12 @@ I wanted a working form, but still, I can host it on GitHub; I found this soluti
 4. Glider.js
 
 In the design process, I wanted the portfolio section to have a different style than the rest of the website. 
-I liked the idea of a carousel that scrolls horizontally, with arrows and dragging. Unfortunately, Bootstrap carousel didn't do exactly what I wanted, so I implemented the library glider that did precisely what I wanted. 
+I liked the idea of a carousel that scrolls horizontally, with arrows and dragging. Unfortunately, BootStrap carousel didn't do exactly what I wanted, so I implemented the library glider that did precisely what I wanted. 
 
+5. SVGInject
 
+This small JS library came from the necessity of having my SVG's integrated into the HTML without bloating the HTML page. 
+Even though there are many methods to do so without a library, it was very challenging to keep the CSS and the animation working whilst having separate files just for SVG. The only tag that allowed me to do that was <embed>, but not only does it seem deprecated, but it was also very ineffective for Accessibility purposes. So I resorted to this library that substitutes my <img> tags with their respective SVG. 
 
 
 
@@ -263,9 +268,9 @@ To Deploy the site using GitHub Pages:
 1. Login (or signup) to Github.
 2. Go to the repository for this project, antoniodegou/web-portfolio-mod1.
 3. Click the settings button.
-4. Select pages in the left hand navigation menu.
-5. From the source dropdown select main branch and press save.
-6. The site has now been deployed, please note that this process may take a few minutes before the site goes live.
+4. Select pages in the left-hand navigation menu.
+5. From the source dropdown, select the main branch, and press save.
+6. The site has now been deployed; please note that this process may take a few minutes before the site goes live.
 
 ### Local Development
 #### How to Fork
@@ -278,11 +283,11 @@ To fork the repository:
 #### How to Clone
 To clone the repository:
 
-1. Log in (or sign up) to GitHub.
+1. Login (or sign up) to GitHub.
 2. Go to the repository for this project, antoniodegou/web-portfolio-mod1.
-3. Click on the code button, select whether you would like to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
+3. Click the code button, select whether you want to clone with HTTPS, SSH or GitHub CLI and copy the link shown.
 4. Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
-5. Type 'git clone' into the terminal and then paste the link you copied in step 3. Press enter.
+5. Type 'git clone' into the terminal and paste the link you copied in step 3. Press enter.
 
 #### When developing with ViteJS when cloned
 
@@ -297,7 +302,7 @@ npm install
 ```
 npm run dev
 ```
-A link with the localhost will appear in the command line. Just click it and you will be directed.
+A link with the localhost will appear in the command line. Just click it, and you will be directed.
 
 ##### Install new dependencies
 
@@ -305,7 +310,7 @@ A link with the localhost will appear in the command line. Just click it and you
 npm add -D "dependency"
 ```
 
-##### Deploying 
+##### Deploying
 ```
 npm run build
 ```
@@ -314,4 +319,45 @@ npm run build
 ## Testing
 
 ## Credits
+
+### Design Inspirations 
+
+I searched the web endlessly, but in the end, I decided to settle my design based on these two examples.
+
+
+Design 1: [Design 1](https://muffingroup.com/blog/yellow-color-palette/)
+
+Design 2: [Design 1](https://shop80004.elevategfx.com/content?c=design%20inspiration&id=4)
+
+
+### Generators
+Shadow Generator [here](https://shadows.brumm.af/)
+
+Favicon generator [here](https://realfavicongenerator.net/)
+
+Font End tool [Vite js](https://vitejs.dev/guide/)
+
+### CSS solutions
+
+Half Circle on section backgrounds [here](http://jsfiddle.net/hashem/u78bQ/1/)
+
+Centring in absolute positioning [here](https://medium.com/front-end-weekly/absolute-centering-in-css-ea3a9d0ad72e)
+
+Triangle animation with rotation for class .cowmove [here](https://stackoverflow.com/questions/59300485/css-animation-moving-back-and-forth-with-rotation)
+
+Button Styles [here](https://codepen.io/screenthink/pen/ZeOyjP)
+
+Scroll Bar Styling [here](https://www.digitalocean.com/community/tutorials/css-scrollbars)
+
+
+### JavaScript Solutions
+
+Get the current year dynamically on the footer [here](https://stackoverflow.com/questions/20903782/how-to-get-the-current-year-using-css)
+
+Make SVG accessible [here](https://www.smashingmagazine.com/2021/05/accessible-svg-patterns-comparison/)
+
+
+Functioning Form, tutorial in login dashboard [here](https://formspree.io/)
+
+Instruction on SVG injection [here](https://github.com/iconfu/svg-inject)
 
