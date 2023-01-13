@@ -319,25 +319,82 @@ npm run build
 
 ## Testing
 
-### W3C validator
+### Automated testing
+
+#### W3C validator
 
 I used [W3C](https://muffingroup.com/blog/yellow-color-palette/) to validator the HTML. It was helpful for unclosed tags. And taught me not to use a closing slash on self-closing tags like <img> vs <img/>.
 
-### ViteJS
+#### ViteJS
 
 Due to its nature, it will not live-reload as soon as there is any error on CSS or javascript, and it also says where it found the error.
 
-### Chrome Lighthouse
+#### Chrome Lighthouse
 
 I was able to get 100 on all fronts on Lighthouse.
 
 ![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/lighthouse.jpg)
 
-### Wave
+#### Wave
 
 Even if Lighthouse has an accessibility check, I double-checked with Wave and got zero errors, including in contrast.
 
 ![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/wave.jpg)
+
+### Manual testing
+
+#### Tools for testing
+
+1. Macbook pro m1 2021
+2. Google Chrome
+3. Firefox
+4. Safari
+5. Hoverify (emulates an Extensive Mobile devices list)
+6. Google Dev Tools
+7. Huawei Mate 20
+8. iMac 2019
+
+##### Header
+
+| Feature  | Expected Outcome | Testing Performed | Result  | Pass/Fail  |
+|:----------|:----------|:----------|:----------|:----------|
+| First 4 menu items    | Scroll to respective section   | Click    | Scrolled    | Pass    |
+| Last 2 menu items    | open new tab with respective links    | Click   | Opens new tab   | Pass   |
+| "Let's Talk" button    | Scroll to contact section    | Click    | Scrolled    | Pass    |
+| "Download CV" button    | Open new tab to CV file    | Click    | Open new tab    | Pass    |
+
+##### About
+
+| Feature  | Expected Outcome | Testing Performed | Result  | Pass/Fail  |
+|:----------|:----------|:----------|:----------|:----------|
+| "more about" button   | Opens Modal   | Click    | Open Modal    | Pass    |
+
+##### Portfolio
+
+| Feature  | Expected Outcome | Testing Performed | Result  | Pass/Fail  |
+|:----------|:----------|:----------|:----------|:----------|
+| Arrows (left and right)  | scrolls porfolio horizontally   | Click    | Scrolls    | Pass    |
+| Dragging portfolio items  | drags items left and right   | Touch and Drag    | Scrolls    | Pass    |
+| "More about" buttons  | Opens respective Modals   | Click   | Open Modal    | Pass    |
+| Hand Cursor  | hand cursor should appear on hover of projects  | Click   | Hand cursor    | Pass    |
+
+##### Contact
+
+| Feature  | Expected Outcome | Testing Performed | Result  | Pass/Fail  |
+|:----------|:----------|:----------|:----------|:----------|
+| Submit  | sends when valid fields   | Click    | Sends Email    | Pass    |
+| Submit  | sends when invalid fields   | Click    | Throws error and generates message   | Pass    |
+| Submit  | error on empty fields   | Click    | Throws error and generates message   | Pass    |
+| Submit  | error on invalid email  | Click    | Throws error and generates message   | Pass but can only generate a small message at the bottom of the form   |
+
+##### Footer
+
+| Feature  | Expected Outcome | Testing Performed | Result  | Pass/Fail  |
+|:----------|:----------|:----------|:----------|:----------|
+| First 4 menu items    | Scroll to respective section   | Click    | Scrolled    | Pass    |
+| social icons    | open new tab with respective links    | Click   | Opens new tab   | Pass   |
+| "Download CV" item    | Open new tab to CV file    | Click    | Open new tab    | Pass    |
+| year automatically updated in rights reserved   | correct year    | N/A   | correct year  | Pass    |
 
 
 

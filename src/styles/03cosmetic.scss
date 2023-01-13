@@ -77,6 +77,12 @@ ul li {
 	opacity: .7;
 }
 
+#my-form-status{
+	color: $my-white!important;
+	border: 2px solid $my-white;
+	padding:1rem;
+}
+
 // backgrounds
 
 body {
@@ -169,3 +175,11 @@ body::-webkit-scrollbar-thumb {
 	/* roundness of the scroll thumb */
 }
 
+label{
+	background: $bg-bg;
+	color: $my-white!important;
+	padding: calc($my-border-radius / 2);
+	border-radius: $my-border-radius $my-border-radius 0 0;
+	margin:0!important;
+	margin-left: 1rem!important;
+}

@@ -46,6 +46,7 @@ new Glider(document.querySelector('.glider'), {
   // working form
 
   var form = document.getElementById("contactForm");
+
     
   async function handleSubmit(event) {
     event.preventDefault();
@@ -75,6 +76,9 @@ new Glider(document.querySelector('.glider'), {
     });
   }
   form.addEventListener("submit", handleSubmit)
+
+
+
 
 
 
