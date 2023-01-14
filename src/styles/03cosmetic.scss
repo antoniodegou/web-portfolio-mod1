@@ -77,7 +77,7 @@ ul li {
 	opacity: .7;
 }
 
-#my-form-status{
+#my-form-status:not(:empty){
 	color: $my-white!important;
 	border: 2px solid $my-white;
 	padding:1rem;

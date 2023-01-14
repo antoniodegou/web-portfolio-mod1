@@ -16,6 +16,7 @@ Visit the deployed site: [Antonio de Gou webpage](https://antoniodegou.github.io
 
 
 * [User Experience](#user-experience-ux)
+  * [Initial discussion](#initial-discussion)
   * [User Stories](#user-stories)
 
 * [Design](#design)
@@ -25,31 +26,26 @@ Visit the deployed site: [Antonio de Gou webpage](https://antoniodegou.github.io
   * [Wireframes](#wireframes)
 
 * [Features](#features)
-  * [General Features on Each Page](#general-features-on-each-page)
+  * [General](#general)
   * [Future Implementations](#future-implementations)
   * [Accessibility](#accessibility)
 
 * [Technologies Used](#technologies-used)
-  * [Languages Used](#languages-used)
-  * [Frameworks, Libraries & Programs Used](#frameworks-libraries--programs-used)
 
 * [Deployment & Local Development](#deployment--local-development)
   * [Deployment](#deployment)
   * [Local Development](#local-development)
-    * [How to Fork](#how-to-fork)
-    * [How to Clone](#how-to-clone)
+
 
 * [Testing](#testing)
+  * [Automated testing](#Automated-testing)
+  * [Manual testing](#Manual-testing)
 
 * [Credits](#credits)
-  * [Code Used](#code-used)
-  * [Content](#content)
-  * [Media](#media)
-  * [Acknowledgments](#acknowledgments)
 
 - - - 
 
-## User Experience
+## User Experience (UX)
 
 ### Initial Discussion
 
@@ -61,10 +57,10 @@ There are a few goals from the get-go, it has to look professional, pixel perfec
 #### essential information for the website
 
 1. Relevant information about Antonio.
-2. tech skills.
+2. Tech skills.
 3. Portfolio, code projects.
-4. contact (form and relevant social media).
-5. downloadable CV.
+4. Contact (form and relevant social media).
+5. Downloadable CV.
 
 ### User Stories
 
@@ -86,7 +82,7 @@ There are a few goals from the get-go, it has to look professional, pixel perfec
 
 The portfolio is a one-page design and separates all the information into sections.
 The aesthetics are based on business cards with round corners, shadows and organised information by columns. 
-The design is bold with a friendly side, the data is clear, and through Modals, more information and be unfolded.
+The design is bold with a friendly side; the data is precise, and through Modals, more information and be unfolded.
 
 ### Colours 
 
@@ -95,7 +91,7 @@ The design is bold with a friendly side, the data is clear, and through Modals, 
 Sage and lemon combine to inspire stability and professionalism with friendliness and approachability. I worked out the colour scheme using Adobe Illustrator. The Design heavily relies on gradients, so blending the colours makes the look smoother, and the contrasting colours go together way better.
 
 
-### Fonts
+### Typography
 
 ![Fonts I used](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/fonts.jpg)
 
@@ -116,20 +112,27 @@ I based the design on geometric shapes, so all images are visual vector assets I
 
 I made the Wireframes with the Balsamiq App and projected three sizes from desktop to mobile.
 
-<details><summary>See Desktop</summary> ![Desktop Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-desktop.jpeg) </details>
+<details>
+<summary>See Desktop</summary> 
 
-<details><summary>See Tablet</summary> ![Tablet Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-tablet.jpeg) </details>
+![Desktop Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-desktop.jpeg) 
 
-<details><summary>See Mobile</summary> ![Mobile Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-mobile.jpeg) </details>
+
+</details>
+
+<details><summary>See Tablet</summary> 
+
+![Tablet Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-tablet.jpeg) </details>
+
+<details><summary>See Mobile</summary> 
+
+![Mobile Mockup](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/mod1-mobile.jpeg) </details>
 
 ## Features
 
 I put all sections into one page with smooth scrolling: the header, about, skills, portfolio, contact and footer.
-(404, 505 pages)
 
 All Pages on the website are responsive and have the following:
-
-
 
 ### General
 
@@ -140,8 +143,9 @@ All Pages on the website are responsive and have the following:
 
 ![browser info](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/favicon.jpg)
 
+### Sections
 
-### Header (opening section)
+#### Header (opening section)
 
 The opening section has both the menu and the header portion.
 The menu has a logo on the left and the menu items on the right. When on mobile, the menu becomes an off-canvas menu.
@@ -151,7 +155,7 @@ The title card had the name as a title, the professional title and a small piece
 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/01header.jpg)
 
-### About
+#### About
 
 The about section is about Antonio.
 It has a picture of Antonio on the left with a composition of shapes that matches the website aesthetics. 
@@ -160,7 +164,7 @@ On the right is a title, a short description of Antonio and a button that opens 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/02about.jpg)
 
 
-### Skills
+#### Skills
 
 A grid system organises the skills.
 There's a short introduction and lists of Languages, Libraries and other tools that Antonio has worked with.
@@ -168,7 +172,7 @@ There is a shorter comment on languages and libraries that Antonio has used in h
 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/03skills.jpg)
 
-### Portfolio
+#### Portfolio
 
 The most important part of the Website is the portfolio; for that reason, the design breaks from its normal flow and gets a different look.
 Each project has a card in a carousel style that works on mobile with a horizontal scroll.
@@ -177,13 +181,13 @@ You can drag the portfolio with arrows or dragging, which works with the mouse a
 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/04portfolio.jpg)
 
-### Form
+#### Form
 
 The primary way of contacting Antonio, even though it's a static website with the help of Formspree, is a working form. 
 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/05contact.jpg)
 
-### Footer
+#### Footer
 
 The footer has a repetition of the smooth scrolling menu, social icons and another opportunity of downloading the CV.
 Also, an "all right reserved" text and symbol.
@@ -200,6 +204,16 @@ Also, an "all right reserved" text and symbol.
 ---
 
 ### Accessibility
+
+Accessibility has been considered since the inception of this project.
+
+I used semantic HTML.
+The buttons have a hover state. 
+All the links have an Aria label.
+The SVG has an Aria, title, and description to describe the image's purpose best.
+The colours passed the contrast test on Wave.
+I analysed with Wave and got Zero errors.
+The Form has labels.
 
 
 ---
@@ -251,7 +265,7 @@ I wanted a working form, but still, I can host it on GitHub; I found this soluti
 4. Glider.js
 
 In the design process, I wanted the portfolio section to have a different style than the rest of the website. 
-I liked the idea of a carousel that scrolls horizontally, with arrows and dragging. Unfortunately, BootStrap carousel didn't do exactly what I wanted, so I implemented the library glider that did precisely what I wanted. 
+I liked the idea of a carousel that scrolls horizontally, with arrows and dragging. Unfortunately, the BootStrap carousel didn't do exactly what I wanted, so I implemented the library glider that did precisely what I wanted. 
 
 5. SVGInject
 
@@ -261,6 +275,9 @@ Even though there are many methods to do so without a library, it was very chall
 
 
 ## Deployment & Local Development
+
+
+
 ### Deployment
 The site is deployed using GitHub Pages - Antonio de Gou.
 
@@ -343,7 +360,9 @@ Even if Lighthouse has an accessibility check, I double-checked with Wave and go
 
 ### Manual testing
 
-#### Tools for testing
+#### Functionality
+
+##### Tools for testing
 
 1. Macbook pro m1 2021
 2. Google Chrome
@@ -353,6 +372,7 @@ Even if Lighthouse has an accessibility check, I double-checked with Wave and go
 6. Google Dev Tools
 7. Huawei Mate 20
 8. iMac 2019
+
 
 ##### Header
 
@@ -395,6 +415,32 @@ Even if Lighthouse has an accessibility check, I double-checked with Wave and go
 | social icons    | open new tab with respective links    | Click   | Opens new tab   | Pass   |
 | "Download CV" item    | Open new tab to CV file    | Click    | Open new tab    | Pass    |
 | year automatically updated in rights reserved   | correct year    | N/A   | correct year  | Pass    |
+
+#### Responsiveness
+
+##### Hoverify and google dev tools
+
+I used Hoverify, which allows me to test several devices simultaneously in live time. 
+
+![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/hoverify.jpg)
+
+At the smallest size of 320px, I detected only one minor bug in the skills section where the spacing is not consistent but still quite readable. 
+
+![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/skills-bug.jpg)
+
+#### Bugs
+
+I had to put the Modals out of the natural flow of the document; otherwise, some elements would be on top of the Modal.
+
+Even following the tutorial, I couldn't make the styling of the scroll bar work on firefox.
+
+The spacing in the Skills section at 320px responsive size is inconsistent but still readable.
+
+In the form, if putting an email with a @ but without "." the validation throws an error but is inconsistent with the other errors. This is part of the Formspress library, and I couldn't find a way to fix it. The error shows below the form and not before the relevant field.
+
+In Firefox, a horizontal scroll bar appears in the portfolio section, which is not part of the design. The other browsers work correctly.
+
+
 
 
 
