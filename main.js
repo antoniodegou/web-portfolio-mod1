@@ -1,10 +1,7 @@
 import './style.scss'
-import * as bootstrap from './node_modules/bootstrap/'
 import * as gliderjs from './node_modules/glider-js/'
 import imgUrl from './assets/479E3A03679BC0F4.png'
 import './src/svgs/self.svg'
-
-
 
 // porfolio carrosel
 
@@ -12,7 +9,6 @@ new Glider(document.querySelector('.glider'), {
     slidesToScroll: 1,
     slidesToShow: 1.5,
     draggable: true,
-    // dots: '.dots',
     arrows: {
       prev: '.glider-prev',
       next: '.glider-next'
@@ -43,15 +39,14 @@ new Glider(document.querySelector('.glider'), {
   });
 
 
-  // working form
+// working form
 
-  var form = document.getElementById("contactForm");
+let form = document.getElementById("contactForm");
 
-    
   async function handleSubmit(event) {
     event.preventDefault();
-    var status = document.getElementById("my-form-status");
-    var data = new FormData(event.target);
+    let status = document.getElementById("my-form-status");
+    let data = new FormData(event.target);
     fetch(event.target.action, {
       method: form.method,
       body: data,
@@ -78,14 +73,9 @@ new Glider(document.querySelector('.glider'), {
   form.addEventListener("submit", handleSubmit)
 
 
-
-
-
-
-  //get footer current year
+//get footer current year
 
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
-
 
 // inject SVG
 

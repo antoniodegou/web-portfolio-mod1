@@ -1,4 +1,7 @@
 
+// import htmlPurge from 'vite-plugin-purgecss'
+import purgecss from 'rollup-plugin-purgecss'
+
 export default {
     base: "./",
     build: {
@@ -10,7 +13,12 @@ export default {
           assetFileNames: `assets/[name].[ext]`,
         },
 
+
       },
-    }
+      polyfill: true,
+      minify: true
+    } ,
+
 
   }
+

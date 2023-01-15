@@ -45,6 +45,13 @@ $my-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
 	font-style: normal;
 }
 
+@font-face {
+	font-display: block;
+	font-family: "bootstrap-icons";
+	src: url("./node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"),
+  url("./node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff");
+  }
+
 $heading-font: 'CabinetGrotesk-Black', sans-serif !important;
 $text-font: 'Satoshi-Medium', sans-serif !important;
 $root-font-size: 16px;
@@ -52,3 +59,4 @@ $smaller-font: 0.95rem;
 $tittle-font-size: 8.5vmin;
 $subtittle-font-size: 2vmin;
 $offcanvas-font-size: 2rem !important;
+

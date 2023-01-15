@@ -54,7 +54,7 @@ Antonio has the goal of entering the tech industry, and a portfolio is an essent
 There are a few goals from the get-go, it has to look professional, pixel perfect, showcase Antonio's personality, and ensure all the information is relevant and easy to find.
 
 
-#### essential information for the website
+#### Essential information for the website
 
 1. Relevant information about Antonio.
 2. Tech skills.
@@ -73,7 +73,9 @@ There are a few goals from the get-go, it has to look professional, pixel perfec
 
 #### Returning Visitor
 
-* Have updated projects and status at all times.
+* Have updated projects at all times.
+* Easy way to contact or connect to social media.
+
 
 
 ## Design
@@ -140,8 +142,15 @@ All Pages on the website are responsive and have the following:
 * A logo on the left of Antonio.
 * Smooth scrolling from that works in all browsers.
 * Several SVGs integrated into the HTML file at times with animation.
+* A scrollbar that is styled.
+* Responsive in all sizes.
+* A decorative half circle in different positions using pseudo-selectors.
+
+
 
 ![browser info](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/favicon.jpg)
+
+![Style scrollbar](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/scrollbar.jpg)
 
 ### Sections
 
@@ -150,7 +159,7 @@ All Pages on the website are responsive and have the following:
 The opening section has both the menu and the header portion.
 The menu has a logo on the left and the menu items on the right. When on mobile, the menu becomes an off-canvas menu.
 The header comprises an SVG animation on the right and a card with the information on the left.
-The animation is a simple metaphor for a system with rotating shapes and a 'gou.init()' text simulating the initiation of a program.
+ The animation is a simple metaphor for a system with rotating shapes and a "*gou.init()*" text simulating the initiation of a program.
 The title card had the name as a title, the professional title and a small piece of information about Antonio's website.
 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/01header.jpg)
@@ -169,6 +178,8 @@ On the right is a title, a short description of Antonio and a button that opens 
 A grid system organises the skills.
 There's a short introduction and lists of Languages, Libraries and other tools that Antonio has worked with.
 There is a shorter comment on languages and libraries that Antonio has used in his Generative art hobby.
+A decorative element that is coherent with the website.
+There is a faded field with less relevant information about Antonio's skills as a generative artist, but still readable.
 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/03skills.jpg)
 
@@ -183,7 +194,7 @@ You can drag the portfolio with arrows or dragging, which works with the mouse a
 
 #### Form
 
-The primary way of contacting Antonio, even though it's a static website with the help of Formspree, is a working form. 
+The primary way of contacting Antonio, even though it's a static website with the help of Formspree, is a working form. Once the form has valid information (i used required for all fields), I receive an email at my address.
 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/05contact.jpg)
 
@@ -191,6 +202,8 @@ The primary way of contacting Antonio, even though it's a static website with th
 
 The footer has a repetition of the smooth scrolling menu, social icons and another opportunity of downloading the CV.
 Also, an "all right reserved" text and symbol.
+With the help of javascript, the year is continuously updated without the need to hardcode.
+
 
 ![Header](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/06footer.jpg)
 
@@ -200,6 +213,7 @@ Also, an "all right reserved" text and symbol.
 * Implement the website in React
 * Ditch form spree and have a more robust implementation of server-side form.
 * Ditch bootstrap to use Tailwind; it seems to be more of an industry standard.
+* Substitute CDN use with a more streamlined approach with more advanced configurations of ViteJS.
 
 ---
 
@@ -231,12 +245,15 @@ Favicon.io To create favicon.
 Shields.io To add badges to the README.
 Hoverify - responsiveness testing on several devices
 freeformatter.com - to prettify HTML CSS and javascript files
+ImageOptim - OSX app to compress images for README file
 
 ### Vite JS (Frontend Tooling)
 
 Vite js is a great starter project; you can add any dependencies and have live reloading as you save your HTML or CSS. In addition, it updates all browsers automatically.
 Some of their features go over my head, but one that gave me peace of mind was that it gets rid of any code that is not in use; for example, non of the bootstrap classes that are not in use do not get passed to the final CSS file. So that makes for smaller files. 
 There is also a separation of production files and final files.
+A lot of configuring can go into ViteJS; I integrated JS, CSS, and SVG as modules, so it bundles everything into a "docs" file.
+All CSS and JS files are exported minimised.
 
 
 ### Languages Used
@@ -256,6 +273,7 @@ I decided to use SASS because I like their implementation of variables; I also a
 
 My primary motivation for Bootstrap use was their grid system, spacing, and responsiveness; once I got the hang of it, it made it much faster to have all spacing work on all devices.
 I also used their nav bar, off-canvas nav bar, and Modals to show more information as needed and keep a clean-looking website. 
+The Bootstrap Icons library is also used for the portfolio's arrows and social links.
 
 
 3. Formspree
@@ -329,9 +347,20 @@ npm add -D "dependency"
 ```
 
 ##### Deploying
+
+This will build all deployed files to the docs folder.
+
 ```
 npm run build
 ```
+You can have a preview of the website in the docs folder.
+```
+npm run preview
+```
+
+You can find the deployment settings in "vite.config.js" file at the project's root.
+
+
 
 
 ## Testing
@@ -341,6 +370,17 @@ npm run build
 #### W3C validator
 
 I used [W3C](https://muffingroup.com/blog/yellow-color-palette/) to validator the HTML. It was helpful for unclosed tags. And taught me not to use a closing slash on self-closing tags like <img> vs <img/>.
+
+![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/html-val.jpg)
+
+![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/css-val.jpg)
+
+In the final style, I had to take bootstrap and bootstrap icons out of Vitejs integration. The CSS validator would throw several errors on the bootstrap file. After a google search, it is said that Bootstrap uses cutting-edge CSS, and it's normal not to pass CSS validation. 
+
+My CSS code has no errors. However, it does have a few warnings on vendor selectors; I decided to use them anyway because I want consistency along all browsers.
+
+![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/css-warnings.jpg)
+
 
 #### ViteJS
 
@@ -439,6 +479,11 @@ The spacing in the Skills section at 320px responsive size is inconsistent but s
 In the form, if putting an email with a @ but without "." the validation throws an error but is inconsistent with the other errors. This is part of the Formspress library, and I couldn't find a way to fix it. The error shows below the form and not before the relevant field.
 
 In Firefox, a horizontal scroll bar appears in the portfolio section, which is not part of the design. The other browsers work correctly.
+
+I couldn't find a way to keep bootstrap bundled in my "style.css" and pass CSS validation. So I had to use a CDN so ViteJS wouldn't integrate the files.
+
+Vite JS update all paths in the HTML CSS and JS files to work once exported to the docs file.
+I couldn't configure ViteJS to update the href attribute inside the SVG files, so the "self. SVG" that has a picture in it had to have the same path in the dev environment and the docs file. That is why there is an Assets folder with a picture inside at the root instead of the src files with the other images.
 
 
 
