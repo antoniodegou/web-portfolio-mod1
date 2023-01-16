@@ -43,10 +43,10 @@
 	769.76,749.94 793.33,726.37 816.91,749.94 827.24,739.6 803.67,716.03 "/>
 <polygon class="self-dark" points="309.72,721.33 309.83,708.67 280.97,708.43 281.21,679.58 268.56,679.47 268.32,708.32 239.46,708.08 
 	239.35,720.74 268.21,720.98 267.97,749.84 280.62,749.94 280.87,721.09 "/>
-<linearGradient id="SVGID_00000088129840299566660430000016416483602628677537_" gradientUnits="userSpaceOnUse" x1="10.1477" y1="713.6138" x2="56.8056" y2="713.6138">
+<linearGradient id="the-gradient2" gradientUnits="userSpaceOnUse" x1="10.1477" y1="713.6138" x2="56.8056" y2="713.6138">
 	<stop  offset="0" class="selfgrad1"  />
 	<stop  offset="1" class="selfgrad2"  />
 </linearGradient>
-<circle style="fill:url(#SVGID_00000088129840299566660430000016416483602628677537_);" cx="33.48" cy="713.61" r="23.33"/>
+<circle class="self-link2"  cx="33.48" cy="713.61" r="23.33"/>
 </g>
 </svg>

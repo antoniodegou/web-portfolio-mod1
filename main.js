@@ -3,7 +3,7 @@ import * as gliderjs from './node_modules/glider-js/'
 import imgUrl from './assets/479E3A03679BC0F4.png'
 import './src/svgs/self.svg'
 
-// porfolio carrosel
+// Make the porfolio carousel work, define its sizes and responsiveness 
 
 new Glider(document.querySelector('.glider'), {
     slidesToScroll: 1,
@@ -39,7 +39,7 @@ new Glider(document.querySelector('.glider'), {
   });
 
 
-// working form
+// Making de form work and adding errors in case of invalid fields.
 
 let form = document.getElementById("contactForm");
 
@@ -73,11 +73,11 @@ let form = document.getElementById("contactForm");
   form.addEventListener("submit", handleSubmit)
 
 
-//get footer current year
+//Update the year in footer,  its updated at all times without hardcoding
 
 document.getElementById("currentYear").innerHTML = new Date().getFullYear();
 
-// inject SVG
+// Injecting SVG into the HTML document without bloating the html file.
 
 SVGInject.setOptions({
   makeIdsUnique: false

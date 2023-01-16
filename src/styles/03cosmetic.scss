@@ -26,13 +26,14 @@ h3,
 .mybtn-font a,
 li,
 h4,
-label {
+label,
+.nav-link:hover,
+.nav-link:focus  {
 	color: $general-bg !important;
 }
 
 .nav-link:hover,
 .nav-link:focus {
-	color: $general-bg !important;
 	text-decoration: underline;
 }
 

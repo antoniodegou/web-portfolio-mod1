@@ -11,7 +11,7 @@
 
 .svg-head-cross-fill,
 .svg-tri-fill {
-	fill: $my-blue;
+	fill: $my-green;
 }
 
 .svg-head-braces-fill,
@@ -69,7 +69,7 @@
 // self svg and doughnut
 
 .self-red {
-	fill: $myred;
+	fill: $my-yellow;
 }
 
 .self-dark {
@@ -85,7 +85,7 @@
 }
 
 .self-link2 {
-	fill: url(#SVGID_00000159431354812606204790000013109046028296011664_);
+	fill: url(#the-gradient2);
 }
 
 
@@ -95,11 +95,11 @@
 }
 
 .selfgrad1 {
-	stop-color: $myred;
+	stop-color: $my-yellow;
 }
 
 .selfgrad2 {
-	stop-color: $mydimred;
+	stop-color: $my-lime;
 }
 
 

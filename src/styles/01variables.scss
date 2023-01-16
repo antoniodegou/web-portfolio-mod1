@@ -1,14 +1,14 @@
 $bg-bg: #28342E;
 $general-bg: #28342E;
-$my-blue: #465A51;
-$my-dim-blue: #7DA497;
+$my-green: #465A51;
+$my-dim-green: #7DA497;
 $my-white: #ECE2CF;
 $my-dim-white: #ffffff;
-$myred: #d8b842;
-$mydimred: #9ca546;
+$my-yellow: #d8b842;
+$my-lime: #9ca546;
 
-$cards-bg: linear-gradient(45deg, $my-blue 0%, $my-dim-blue 100%);
-$circle-bg: linear-gradient(150deg, $mydimred 0%, $myred 100%);
+$cards-bg: linear-gradient(45deg, $my-green 0%, $my-dim-green 100%);
+$circle-bg: linear-gradient(150deg, $my-lime 0%, $my-yellow 100%);
 $mini-cards-bg: linear-gradient(90deg, $my-white 0%, $my-dim-white 100%);
 
 $semicircle-width: 65vmin;
@@ -45,12 +45,7 @@ $my-shadow: 2.8px 2.8px 2.2px rgba(0, 0, 0, 0.02),
 	font-style: normal;
 }
 
-@font-face {
-	font-display: block;
-	font-family: "bootstrap-icons";
-	src: url("./node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff2") format("woff2"),
-  url("./node_modules/bootstrap-icons/font/fonts/bootstrap-icons.woff") format("woff");
-  }
+
 
 $heading-font: 'CabinetGrotesk-Black', sans-serif !important;
 $text-font: 'Satoshi-Medium', sans-serif !important;

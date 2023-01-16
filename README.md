@@ -107,7 +107,8 @@ Both of these fonts have an interesting contrast between them.
 
 ![Assets i created](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/design-assets.jpg)
 
-I based the design on geometric shapes, so all images are visual vector assets I made in Adobe Illustrator. They were then exported in SVG format and integrated into the HTML document. There is also a picture of Antonio in the about section. 
+I based the design on geometric shapes, so all images are visual vector assets I made in Adobe Illustrator. They were then exported in SVG format and integrated into the HTML document. 
+There is also a picture of Antonio in the about section. 
 
 
 ### Wireframes
@@ -253,7 +254,7 @@ Vite js is a great starter project; you can add any dependencies and have live r
 Some of their features go over my head, but one that gave me peace of mind was that it gets rid of any code that is not in use; for example, non of the bootstrap classes that are not in use do not get passed to the final CSS file. So that makes for smaller files. 
 There is also a separation of production files and final files.
 A lot of configuring can go into ViteJS; I integrated JS, CSS, and SVG as modules, so it bundles everything into a "docs" file.
-All CSS and JS files are exported minimised.
+All CSS and JS files are exported minimised to the docs folder; those are used for the deployed website. Those files are generated and are not to be used for coding.
 
 
 ### Languages Used
@@ -294,6 +295,11 @@ Even though there are many methods to do so without a library, it was very chall
 
 ## Deployment & Local Development
 
+You can find the working HTML, SCSS and JS at the root. The docs folder will be the output after the command "build". 
+The SRC folder has all CSS modules, SVGs and fonts.
+Node Modules have all the dependencies that ViteJS uses to work.
+Vite.config.js is my configuration of the output files.
+Package.json, you can find all the dependencies that I used.
 
 
 ### Deployment
@@ -372,6 +378,8 @@ You can find the deployment settings in "vite.config.js" file at the project's r
 I used [W3C](https://muffingroup.com/blog/yellow-color-palette/) to validator the HTML. It was helpful for unclosed tags. And taught me not to use a closing slash on self-closing tags like <img> vs <img/>.
 
 ![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/html-val.jpg)
+
+This is referencing just my CSS.
 
 ![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/css-val.jpg)
 
@@ -485,7 +493,7 @@ I couldn't find a way to keep bootstrap bundled in my "style.css" and pass CSS v
 Vite JS update all paths in the HTML CSS and JS files to work once exported to the docs file.
 I couldn't configure ViteJS to update the href attribute inside the SVG files, so the "self. SVG" that has a picture in it had to have the same path in the dev environment and the docs file. That is why there is an Assets folder with a picture inside at the root instead of the src files with the other images.
 
-
+I tried to use WebP format for the selfie, but it seemed to not work in not-so-old versions of safari, particularly iPhone 8 and before as well as some Ipads. I resorted to use PNG format. 
 
 
 
