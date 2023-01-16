@@ -406,6 +406,14 @@ Even if Lighthouse has an accessibility check, I double-checked with Wave and go
 
 ![Lighhouse](https://raw.githubusercontent.com/antoniodegou/web-portfolio-mod1/main/readme-images/wave.jpg)
 
+
+#### Form Spree
+I used this test email. on email https://www.mail.com/
+If you would like to test the form use these credentials:
+
+email: antoniodegou.test@gmail.com
+password: &TsTUCv0E32r
+
 ### Manual testing
 
 #### Functionality
