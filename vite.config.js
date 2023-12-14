@@ -6,6 +6,7 @@ export default {
     base: "./",
     build: {
       outDir : "docs",
+      
       rollupOptions:{
     
         output: {
@@ -16,6 +17,7 @@ export default {
         },
 
       },
+
       polyfill: true,
       minify: true
     } ,
